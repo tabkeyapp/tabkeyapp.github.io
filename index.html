@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/KTstyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="fb-root"></div>
+
+  <div id="pageDiv">
+    <div id="nav">
+      <div id="logo">
+        <img src="logo.png">
+      </div>
+
+    </div>
+    <div id="sideWrap">
+      <div id="sidebar">
+        <div id="guitarButton" class="sideButton">
+          <a class="hvr-underline-from-right" onClick="tabView();">
+            <img src="guitar.png"></a>
+        </div>
+        <div id="tabViewButton" class="sideButton">
+          <a class="hvr-underline-from-right" onClick="tabView();">
+            <img src="tabview.png"></a>
+        </div>
+        <div id="neckViewButton" class="sideButton">
+          <img src="neckView.png">
+        </div>
+        <div id="pianoButton" class="sideButton">
+          <a class="hvr-underline-from-right" onClick="pianoView();">
+            <img src="piano.png">
+        </div>
+        <div id="botLinks">
+          <div id="howtoButton" class="sideButton">
+            <a class="hvr-underline-from-right" onClick="howToView();">
+              <img src="howto.png"></a>
+          </div>
+          <div id="faqButton" class="sideButton">
+            <a class="hvr-underline-from-right" onClick="faqView();">
+              <img src="faq.png"></a>
+          </div>
+        </div>
+      </div>
+      <div id="social">
+
+        <a href="https://twitter.com/tabkeyapp?ref_src=twsrc%5Etfw"
+          class="twitter-follow-button" data-show-count="false">Follow</a>
+        <script async src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"></script>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          class="twitter-share-button" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"></script>
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftabkeyapp%2F&width=106&layout=button_count&action=like&size=small&show_faces=false&share=true&height=46&appId" width="106" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </div>
+    <div id="contentDiv">
+
+      <div id="tabViewDiv" class="hidden" style="width:700px">
+        <div id="neck1" style="width:668px">
+          <div class="stringCell" id="gs1">
+            -
+          </div>
+          <div class="stringCell">
+            |
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+        </div>
+        <div id="neck2" style="width:668px">
+          <div class="stringCell" id="gs2">
+            -
+          </div>
+          <div class="stringCell">
+            |
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+        </div>
+        <div id="neck3" style="width:668px">
+          <div class="stringCell" id="gs3">
+            -
+          </div>
+          <div class="stringCell">
+            |
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+        </div>
+        <div id="neck4" style="width:668px">
+          <div class="stringCell" id="gs4">
+            -
+          </div>
+          <div class="stringCell">
+            |
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+        </div>
+        <div id="neck5" style="width:668px">
+          <div class="stringCell" id="gs5">
+            -
+          </div>
+          <div class="stringCell">
+            |
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+        </div>
+        <div id="wrapper" style="width:668px">
+          <div class="stringCell" id="note">
+            -
+          </div>
+          <div class="stringCell">
+            |
+          </div>
+          <div class="stringCell" id="s1">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell" id="s2">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell" id="s3">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell" id="s4">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell" id="s5">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell" id="s6">
+            -
+          </div>
+          <div class="stringCell">
+            -
+          </div>
+          <div class="stringCell" id="s7">
+            -
+          </div>
+          <div class="stringCell" id="s8">
+            -
+          </div>
+        </div>
+
+
+        <div id="filler"></div>
+
+        <div id="headerTop">
+          <div id="majorTop">
+            <img src="major.png">
+          </div>
+          <div id="minorTop">
+            <img src="minor.png">
+          </div>
+        </div>
+        <div id="headerBot">
+          <div id="majorBot" style="width:50%"></div>
+          <div id="minorBot" style="width:50%"></div>
+        </div>
+
+        <div id="dropdown">
+          <span class="custom-dropdown big">
+            <select name="list" id="list" style="width:700px;" onchange="keyChange()">
+              <option selected disabled hidden value="">SELECT TUNING</option>
+              <option value="E">Standard |E A D G B e|</option>
+              <option value="D#">Half-step down |D♯ G♯ C♯ F♯ A♯ d♯|</option>
+              <option value="D">Whole-step down |D G C F A d|</option>
+              <option value="dropD">Drop D |D A D G B e|</option>
+              <option value="C#">Drop C♯ |C♯ G♯ C♯ F♯ A♯ d♯|</option>
+              <option value="C">Drop C |C G C F A d|</option>
+            </select>
+          </span>
+        </div>
+        <div id="inputDiv" style="width:100%">
+          <input id="userTextBox" placeholder="Enter your notes here!"
+          onkeydown="giveGuitar(this)" autocomplete="off">
+        </div>
+
+        <div id="theKey" style="width:100%">
+        </div>
+      </div>
+
+      <div id="pianoViewDiv" class="hidden" style="width:700px">
+        <div id="topPianoWrap">
+        	<div id="TopPiano-01">
+        		<img src="images/TopPiano_01.gif" id="k2" class="showPiano" width="123" height="242" alt="">
+        	</div>
+        	<div id="TopPiano-02">
+        		<img src="images/TopPiano_02.gif" id="k4" class="showPiano" width="84" height="242" alt="">
+        	</div>
+        	<div id="TopPiano-03">
+        		<img src="images/TopPiano_03.gif" width="72" height="242" alt="">
+        	</div>
+        	<div id="TopPiano-04">
+        		<img src="images/TopPiano_04.gif" id="k7" class="showPiano" width="78" height="242" alt="">
+        	</div>
+        	<div id="TopPiano-05">
+        		<img src="images/TopPiano_05.gif" id="k9" class="showPiano" width="77" height="242" alt="">
+        	</div>
+        	<div id="TopPiano-06">
+        		<img src="images/TopPiano_06.gif" id="k11" class="showPiano" width="80" height="242" alt="">
+        	</div>
+        	<div id="TopPiano-07">
+        		<img src="images/TopPiano_07.gif" width="44" height="242" alt="">
+        	</div>
+        	<div id="TopPiano-08">
+        		<img src="images/TopPiano_08.gif" id="k1" class="showPiano" width="84" height="109" alt="">
+        	</div>
+        	<div id="TopPiano-09">
+        		<img src="images/TopPiano_09.gif" id="k3" class="showPiano" width="79" height="109" alt="">
+        	</div>
+        	<div id="TopPiano-10">
+        		<img src="images/TopPiano_10.gif" id="k5" class="showPiano" width="79" height="109" alt="">
+        	</div>
+        	<div id="TopPiano-11">
+        		<img src="images/TopPiano_11.gif" id="k6" class="showPiano" width="77" height="109" alt="">
+        	</div>
+        	<div id="TopPiano-12">
+        		<img src="images/TopPiano_12.gif" id="k8" class="showPiano" width="77" height="109" alt="">
+        	</div>
+        	<div id="TopPiano-13">
+        		<img src="images/TopPiano_13.gif" id="k10" class="showPiano" width="78" height="109" alt="">
+        	</div>
+        	<div id="TopPiano-14">
+        		<img src="images/TopPiano_14.jpg" id="k12" class="showPiano" width="84" height="109" alt="">
+        	</div>
+        </div>
+
+        <div id="bottomPianoWrap">
+	<div id="BottomPiano-01">
+		<img src="images/BottomPiano_01.gif" width="123" height="242" alt="">
+	</div>
+	<div id="BottomPiano-02">
+		<img src="images/BottomPiano_02.gif" width="84" height="242" alt="">
+	</div>
+	<div id="BottomPiano-03">
+		<img src="images/BottomPiano_03.gif" width="72" height="242" alt="">
+	</div>
+	<div id="BottomPiano-04">
+		<img src="images/BottomPiano_04.gif" width="78" height="242" alt="">
+	</div>
+	<div id="BottomPiano-05">
+		<img src="images/BottomPiano_05.gif" width="77" height="242" alt="">
+	</div>
+	<div id="BottomPiano-06">
+		<img src="images/BottomPiano_06.gif" width="80" height="242" alt="">
+	</div>
+	<div id="BottomPiano-07">
+		<img src="images/BottomPiano_07.gif" width="44" height="242" alt="">
+	</div>
+	<div id="BottomPiano-08">
+		<img src="images/BottomPiano_08.gif" width="84" height="109" alt="">
+	</div>
+	<div id="BottomPiano-09">
+		<img src="images/BottomPiano_09.gif" width="79" height="109" alt="">
+	</div>
+	<div id="BottomPiano-10">
+		<img src="images/BottomPiano_10.gif" width="79" height="109" alt="">
+	</div>
+	<div id="BottomPiano-11">
+		<img src="images/BottomPiano_11.gif" width="77" height="109" alt="">
+	</div>
+	<div id="BottomPiano-12">
+		<img src="images/BottomPiano_12.gif" width="77" height="109" alt="">
+	</div>
+	<div id="BottomPiano-13">
+		<img src="images/BottomPiano_13.gif" width="78" height="109" alt="">
+	</div>
+	<div id="BottomPiano-14">
+		<img src="images/BottomPiano_14.jpg" width="84" height="109" alt="">
+	</div>
+</div>
+
+<div id="pianoHeadersWrap">
+<div id="headerTopP">
+  <div id="majorTopP">
+    <img src="major.png">
+  </div>
+  <div id="minorTopP">
+    <img src="minor.png">
+  </div>
+</div>
+<div id="headerBotP">
+  <div id="majorBotP"></div>
+  <div id="minorBotP"></div>
+</div>
+</div>
+<div id="inputPianoDiv" style="width:100%">
+  <input id="userTextBoxPiano" placeholder="Enter your notes here!"
+  onkeydown="givePiano(this)" autocomplete="off">
+</div>
+
+      </div>
+      <div id="howToDiv" class="hidden" style="width:700px">
+
+        <p>
+          TabKey is made to find the major and relative minor your scale is in.
+        </p>
+        <p>
+          Enter your notes as they would appear on your lowest string (deepest
+          pitch and thickest gauge) starting with the lowest note possible.  "0"
+          is open, "1" is the first fret, and so on!
+        </p>
+        <img src="guitarneckhowto.png">
+        <p>
+          Once TabKey receives enough notes, it will show you the major and
+          relative minor key that your notes are in.  To try another scale or
+          tuning, just enter in more numbers and the program starts over!
+        </p>
+        <p style="font-size: 12px;">
+          *Guitar neck view in development!
+        </p>
+
+      </div>
+      <div id="faqDiv" class="show" style="width:700px;">
+        <b>Is TabKey free?</b><BR>
+          <p>
+            Yes!  100% free!
+          </p>
+
+
+          <b>What is TabKey?</b><BR>
+            <p>
+              TabKey is made to find the major and relative minor your scale is
+              in.
+            </p>
+
+            <b>Who is Tabkey for?</b><BR>
+              <p>
+                TabKey is for musicians.
+              </p>
+              <b>I play bass, will TabKey work for me?</b><BR>
+                <p>
+                  Yes!  Simply disregard the highest two strings in the tab
+                  diagram (B and high e in standard tuning).
+                </p>
+
+                <b>What purpose does TabKey serve?</b><BR>
+                  <p>
+                    You might be a beginner interested in music theory.  Use
+                    TabKey to learn and experiment!
+                    <p>
+                      Maybe you're a guitarist unfamiliar with sheet music or
+                      keys.  Knowing what key your song is in can help you write
+                      more musical-sounding lead parts, chord progressions, or
+                      transitions.  <br>
+
+                    </p>
+                    <p>
+                      Perhaps you're in the studio.  Does your pitch correction
+                      plug-in accept keys?  TabKey can help!  Need the root note
+                      for your EQ or subharmonic exciter?  Make mixing musical
+                      with TabKey.  Need control over your synth or arrpegiator?
+                      <i>Hello, TabKey!</i>
+                    </p>
+                    <p>
+                      TabKey can serve many purposes.  Let us know what YOU use
+                      it for!
+                    </p>
+
+                    <b>I found a bug or error.</b><BR>
+                      <p>
+                        That's great!  Let us know on Facebook or Twitter so we
+                        can fix that noise as soon as possible.  Thanks in
+                        advance!
+                      </p>
+                      <b>I have a suggestion!</b><BR>
+                        <p>
+                          Wonderful!  TabKey currently only has a presence on
+                          Facebook and Twitter.  If you're interested in
+                          communicating through either of those channels, I'd
+                          love to hear your idea!
+                        </p>
+                        <b>When will (insert feature here) be added?</b><BR>
+                          <p>
+                            TabKey has little more than basic functionality
+                            right now, but it's just getting started!  There are
+                            new things in development and new ideas are on deck.
+                            However, potential features may be difficult
+                            to implement, and some might be impractical or
+                            impossible.
+                            </p>
+                            <p>
+                              In the interest of full disclosure, here I'll try
+                              to maintain a list of features in the works with
+                              the following disclaimer: <u>Nothing is set in
+                                stone until it's live.</u>
+                            </p>
+                            <ul>
+                              <li><s>Piano mode</s> (Live!)</li>
+                              <li>Neck view (in development)</li>
+                              <li>Bass view (concept)</li>
+                              <li>Display notes in the chosen scale (concept)</li>
+                              <li>Display entered notes in real time</li>
+                              <li>Mobile browser support</li>
+                              <li>Additional instrument support</li>
+                            </ul>
+                            <p>
+                              I fully intend to bring all of the items in this
+                              list to fruition, but I reserve the right to remove
+                              them if they just aren't working.  You can expect
+                              items marked as (in development) soon!  There's a
+                              good chance and/or a moderate timeline on (concept)s,
+                              and items at the bottom of the list haven't been
+                              started.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <script type="text/javascript" src="js/TabKey.js"></script>
+                      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+                      </script>
+                    </body>
+                  </html>

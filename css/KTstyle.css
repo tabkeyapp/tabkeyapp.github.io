@@ -1,0 +1,684 @@
+body {
+  background-image: url('../ktbg3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'kalam', cursive;
+  color: #fff;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 14px;
+margin-top: 0px;
+text-indent: 0px;
+font-family: 'Open Sans', sans-serif;
+letter-spacing: 0px;
+line-height: 22px;
+font-weight: light;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+b {
+  font-size: 30px;
+  margin-bot: 0px;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+#pianoHeadersWrap {
+  border-radius: 4px;
+  vertical-align: middle;
+  text-align: center;
+  float: right;
+  margin-top: -250px;
+  display: block;
+  position: relative;
+  width: 700px;
+}
+
+#majorTopP, #minorTopP, #majorBotP, #minorBotP {
+display: inline-block;
+text-align: center;
+  width: 50%;
+  height: 70px;
+  background-color: transparent;
+  font-size: 30px;
+float:left;
+
+}
+
+#headerTopP, #headerBotP {
+  background-color: transparent;
+  height: 55px;
+}
+
+#majorTop, #minorTop, #majorBot, #minorBot {
+  float: left;
+  width: 50%;
+  height: 70px;
+  background-color: transparent;
+  font-size: 30px;
+}
+
+#headerTop, #headerBot {
+  background-color: transparent;
+  height: 55px;
+}
+
+#filler {
+  height: 30px;
+}
+
+#nav {
+  width: 900px;
+  position: relative;
+  min-height: 60px;
+}
+
+#logo {
+  width: 200px;
+  float: left;
+}
+
+#navLinks {
+  width: 200px;
+  float: left;
+  min-height:60px;
+  position: relative;
+  top: 7px;
+}
+
+#empty {
+  width: auto;
+  float: right;
+}
+
+#sideWrap {
+  text-align: right;
+  clear: both;
+  float: left;
+  width: 150px;
+}
+
+#sidebar {
+  width: 150px;
+  height: 460px;
+  clear: both;
+  float: left;
+}
+
+#pageDiv {
+  width: 900px;
+  height: 620px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgba(20, 20, 20, 0.9);
+}
+
+#userTextBox, #userTextBoxPiano {
+  width: 700px;
+  padding: 12px 20px;
+  margin: 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font: 1.5em/1.5em 'kalam', cursive;
+  text-align: center;
+  height: 60px;
+}
+
+#tabViewDiv {
+  border-radius: 4px;
+  vertical-align: middle;
+  text-align: center;
+  float: right;
+  margin-top: -30px;
+  display: block;
+  position: relative;
+}
+
+#contentDiv {
+  position: relative;
+}
+
+#howToDiv {
+  position: absolute;
+  height: 600px;
+  padding: 20px;
+  left: 170px;
+  top: -40px;
+  border-radius: 4px;
+  vertical-align: middle;
+  text-align: left;
+  float: right;
+  overflow-y: auto;
+}
+
+#faqDiv {
+  position: absolute;
+  height: 580px;
+  padding: 20px;
+  left: 170px;
+  top: -30px;
+  border-radius: 4px;
+  vertical-align: middle;
+  text-align: left;
+  float: right;
+  overflow-y: auto;
+}
+
+#social {
+  text-align: right;
+}
+
+#botLinks {
+  position: absolute;
+  bottom: 120px;
+  right: 770px;
+}
+
+#neckViewButton {
+  opacity: .5;
+}
+
+.hiddenPiano {
+  opacity: 0;
+  transition: opacity .5s linear;
+  -webkit-transition: opacity .5s linear;
+  -moz-transition: opacity .5s linear;
+  -o-transition: opacity .5s linear;
+  z-index: 0;
+}
+.showPiano {
+  opacity: 1;
+  transition: opacity .5s linear;
+  -webkit-transition: opacity .5s linear;
+  -moz-transition: opacity .5s linear;
+  -o-transition: opacity .5s linear;
+  z-index: 1;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity .5s linear;
+  -webkit-transition: opacity .5s linear;
+  -moz-transition: opacity .5s linear;
+  -o-transition: opacity .5s linear;
+  z-index: 0;
+}
+.show {
+  opacity: 1;
+  transition: opacity .5s linear;
+  -webkit-transition: opacity .5s linear;
+  -moz-transition: opacity .5s linear;
+  -o-transition: opacity .5s linear;
+  z-index: 1;
+}
+
+.sideButton {
+  text-align: right;
+  padding-bottom: 3px;
+}
+
+.stringCell {
+  display: inline-block;
+  letter-spacing: .2em;
+  font-family: 'PT Mono', monospace;
+  font-size: 40px;
+}
+
+.barCell {
+  display: inline-block;
+  letter-spacing: .2em;
+  font-family: 'PT Mono', monospace;
+  font-size: 30px;
+}
+
+.big {
+  font-size: 1.5em;
+}
+
+/* Custom dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.custom-dropdown select {
+  background: linear-gradient(270deg, #3c3748, #4f4c26, #27486d);
+  background-size: 600% 600%;
+  -webkit-animation: listGradient 30s ease infinite;
+  -moz-animation: listGradient 30s ease infinite;
+  animation: listGradient 30s ease infinite;
+  background-color:rgba(20, 20, 20, .9);
+  color: #ffffff; /* Font color */
+  font-size: inherit;
+  font-family: 'kalam', cursive;
+  padding: .5em;
+  padding-right: 2.5em;
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+
+  text-overflow: '';
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+  -moz-appearance: button;
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::after {
+  /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+
+}
+
+.custom-dropdown::before {
+  /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Underline From Right */
+.hvr-underline-from-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  height: 2px;
+  -webkit-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before,
+.hvr-underline-from-right:active:before {
+  left: 0;
+}
+
+/* Underline Reveal */
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  height: 2px;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before,
+.hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+#faqDiv::-webkit-scrollbar-track, #howToDiv::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #2b2b2b;
+}
+
+#faqDiv::-webkit-scrollbar, #howToDiv::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #2b2b2b;
+}
+
+#faqDiv::-webkit-scrollbar-thumb, #howToDiv::-webkit-scrollbar-thumb
+{
+	background-color: #fff;
+	border: 0px solid #555555;
+}
+
+
+@-webkit-keyframes listGradient {
+0% {
+  background-position:0% 50%
+}
+50% {
+  background-position:100% 50%
+}
+100% {
+  background-position:0% 50%
+}
+}
+@-moz-keyframes listGradient {
+0% {
+  background-position:0% 50%
+}
+50% {
+  background-position:100% 50%
+}
+100% {
+  background-position:0% 50%
+}
+}
+@keyframes listGradient {
+0% {
+  background-position:0% 50%
+}
+50% {
+  background-position:100% 50%
+}
+100% {
+  background-position:0% 50%
+}
+}
+
+#inputPianoDiv {
+  margin: 0 auto;
+  top: 520px;
+  position: absolute;
+
+}
+
+#pianoViewDiv {
+left: 200px;
+
+  margin-top: -30px;
+  position: relative;
+text-align: center;
+
+}
+
+#topPianoWrap {
+left: 70px;
+  top: 0;
+  display: block;
+	position: absolute;
+	width:558px;
+	height:351px;
+  z-index: 1;
+}
+
+#TopPiano-01 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:123px;
+	height:242px;
+}
+
+#TopPiano-02 {
+	position:absolute;
+	left:123px;
+	top:0px;
+	width:84px;
+	height:242px;
+}
+
+#TopPiano-03 {
+	position:absolute;
+	left:207px;
+	top:0px;
+	width:72px;
+	height:242px;
+}
+
+#TopPiano-04 {
+	position:absolute;
+	left:279px;
+	top:0px;
+	width:78px;
+	height:242px;
+}
+
+#TopPiano-05 {
+	position:absolute;
+	left:357px;
+	top:0px;
+	width:77px;
+	height:242px;
+}
+
+#TopPiano-06 {
+	position:absolute;
+	left:434px;
+	top:0px;
+	width:80px;
+	height:242px;
+}
+
+#TopPiano-07 {
+	position:absolute;
+	left:514px;
+	top:0px;
+	width:44px;
+	height:242px;
+}
+
+#TopPiano-08 {
+	position:absolute;
+	left:0px;
+	top:242px;
+	width:84px;
+	height:109px;
+}
+
+#TopPiano-09 {
+	position:absolute;
+	left:84px;
+	top:242px;
+	width:79px;
+	height:109px;
+}
+
+#TopPiano-10 {
+	position:absolute;
+	left:163px;
+	top:242px;
+	width:79px;
+	height:109px;
+}
+
+#TopPiano-11 {
+	position:absolute;
+	left:242px;
+	top:242px;
+	width:77px;
+	height:109px;
+}
+
+#TopPiano-12 {
+	position:absolute;
+	left:319px;
+	top:242px;
+	width:77px;
+	height:109px;
+}
+
+#TopPiano-13 {
+	position:absolute;
+	left:396px;
+	top:242px;
+	width:78px;
+	height:109px;
+}
+
+#TopPiano-14 {
+	position:absolute;
+	left:474px;
+	top:242px;
+	width:84px;
+	height:109px;
+}
+
+#bottomPianoWrap {
+  top: 0;
+  left: 70px;
+	position: absolute;
+	width:558px;
+	height:351px;
+  z-index: 0;
+}
+
+#BottomPiano-01 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:123px;
+	height:242px;
+}
+
+#BottomPiano-02 {
+	position:absolute;
+	left:123px;
+	top:0px;
+	width:84px;
+	height:242px;
+}
+
+#BottomPiano-03 {
+	position:absolute;
+	left:207px;
+	top:0px;
+	width:72px;
+	height:242px;
+}
+
+#BottomPiano-04 {
+	position:absolute;
+	left:279px;
+	top:0px;
+	width:78px;
+	height:242px;
+}
+
+#BottomPiano-05 {
+	position:absolute;
+	left:357px;
+	top:0px;
+	width:77px;
+	height:242px;
+}
+
+#BottomPiano-06 {
+	position:absolute;
+	left:434px;
+	top:0px;
+	width:80px;
+	height:242px;
+}
+
+#BottomPiano-07 {
+	position:absolute;
+	left:514px;
+	top:0px;
+	width:44px;
+	height:242px;
+}
+
+#BottomPiano-08 {
+	position:absolute;
+	left:0px;
+	top:242px;
+	width:84px;
+	height:109px;
+}
+
+#BottomPiano-09 {
+	position:absolute;
+	left:84px;
+	top:242px;
+	width:79px;
+	height:109px;
+}
+
+#BottomPiano-10 {
+	position:absolute;
+	left:163px;
+	top:242px;
+	width:79px;
+	height:109px;
+}
+
+#BottomPiano-11 {
+	position:absolute;
+	left:242px;
+	top:242px;
+	width:77px;
+	height:109px;
+}
+
+#BottomPiano-12 {
+	position:absolute;
+	left:319px;
+	top:242px;
+	width:77px;
+	height:109px;
+}
+
+#BottomPiano-13 {
+	position:absolute;
+	left:396px;
+	top:242px;
+	width:78px;
+	height:109px;
+}
+
+#BottomPiano-14 {
+	position:absolute;
+	left:474px;
+	top:242px;
+	width:84px;
+	height:109px;
+}
