@@ -10,8 +10,8 @@ var theMinor;
 var theNotes;
 var moveLeft = document.querySelector("#tabViewDiv");
 
-var n1, n2, n3, n4, n5, n6, n7;  //  Guitar note variables
-var np1, np2, np3, np4, np5, np6, np7;  //  Piano note variables
+var n1, n2, n3, n4, n5, n6, n7; //  Guitar note variables
+var np1, np2, np3, np4, np5, np6, np7; //  Piano note variables
 var x;
 var tuning;
 
@@ -64,7 +64,7 @@ function guitarReceiver() {
     n3 = x;
     if (n3 > 6 || n3 < 3 || (n3 - n2) > 2 || (n3 - n2 < 1)) {
       swal("Please enter valid third note!");
-    } else if ((n3 - n2) === 1 && (n2-n1) === 1) {
+    } else if ((n3 - n2) === 1 && (n2 - n1) === 1) {
       swal("Please enter valid third note!");
     } else {
       n3 = parseInt(n3);
@@ -75,7 +75,7 @@ function guitarReceiver() {
     n4 = x;
     if (n4 > 7 || n4 < 5 || (n4 - n3) > 2 || (n4 - n3) < 1) {
       swal("Please enter valid fourth note!");
-    } else if ((n4 - n3) === 1 && (n3-n2) === 1) {
+    } else if ((n4 - n3) === 1 && (n3 - n2) === 1) {
       swal("Please enter valid fourth note!");
     } else {
       n4 = parseInt(n4);
@@ -86,9 +86,9 @@ function guitarReceiver() {
     n5 = x;
     if (n5 > 8 || n5 < 6 || (n5 - n4) > 2 || (n5 - n4) < 1) {
       swal("Please enter valid fifth note!");
-    } else if ((n5 - n4) === 1 && (n4-n3) === 1) {
+    } else if ((n5 - n4) === 1 && (n4 - n3) === 1) {
       swal("Please enter valid fifth note!");
-    } else if ((n5 - n4) === 2 && (n4-n3) === 2 && (n3-n2) === 2 && (n2-n1) === 2) {
+    } else if ((n5 - n4) === 2 && (n4 - n3) === 2 && (n3 - n2) === 2 && (n2 - n1) === 2) {
       swal("Please enter valid fifth note!");
     } else {
       n5 = parseInt(n5);
@@ -97,11 +97,11 @@ function guitarReceiver() {
     }
   } else if (userInput.length === 5) {
     n6 = x;
-    if (n6 > 10 || n6 < 8 || (n6 - n5 < 1) || (n6-n5) > 2) {
+    if (n6 > 10 || n6 < 8 || (n6 - n5 < 1) || (n6 - n5) > 2) {
       swal("Please enter valid sixth note!");
-    } else if ((n6 - n5) === 1 && (n5-n4) === 1) {
+    } else if ((n6 - n5) === 1 && (n5 - n4) === 1) {
       swal("Please enter valid sixth note!");
-    } else if ((n6 - n5) === 2 && (n5-n4) === 2 && (n4-n3) === 2 && (n3-n2) === 2) {
+    } else if ((n6 - n5) === 2 && (n5 - n4) === 2 && (n4 - n3) === 2 && (n3 - n2) === 2) {
       swal("Please enter valid fifth note!");
     } else {
       n6 = parseInt(n6);
@@ -112,9 +112,9 @@ function guitarReceiver() {
     n7 = x;
     if (n7 > 11 || n7 < 10 || (n7 - n6 < 1) || (n7 - n6 > 2)) {
       swal("Please enter valid last note!");
-    } else if ((n7 - n6) === 1 && (n6-n5) === 1) {
+    } else if ((n7 - n6) === 1 && (n6 - n5) === 1) {
       swal("Please enter valid last note!");
-    } else if ((n7 - n6) === 2 && (n6-n5) === 2 && (n5-n4) === 2 && (n4-n3) === 2) {
+    } else if ((n7 - n6) === 2 && (n6 - n5) === 2 && (n5 - n4) === 2 && (n4 - n3) === 2) {
       swal("Please enter valid last note!");
     } else {
       n7 = parseInt(n7);
@@ -149,7 +149,7 @@ function sortNumber(a, b) {
   return a - b;
 }
 
-function cToStandard () {
+function cToStandard() {
   for (var i = 0; i < userInput.length; i++) {
     userInput[i] -= 4;
     if (userInput[i] < 0) {
@@ -160,7 +160,7 @@ function cToStandard () {
   console.log(userInput);
 }
 
-function cSharpToStandard () {
+function cSharpToStandard() {
   for (var i = 0; i < userInput.length; i++) {
     userInput[i] -= 3;
     if (userInput[i] < 0) {
@@ -171,7 +171,7 @@ function cSharpToStandard () {
   console.log(userInput);
 }
 
-function dToStandard () {
+function dToStandard() {
   for (var i = 0; i < userInput.length; i++) {
     userInput[i] -= 2;
     if (userInput[i] < 0) {
@@ -182,7 +182,7 @@ function dToStandard () {
   console.log(userInput);
 }
 
-function halfToStandard () {
+function halfToStandard() {
 
   for (var i = 0; i < userInput.length; i++) {
     userInput[i] -= 1;
@@ -193,13 +193,12 @@ function halfToStandard () {
   userInput.sort(sortNumber);
 }
 
-function pianoToStandard () {
+function pianoToStandard() {
   for (var i = 0; i < userInput.length; i++) {
     userInput[i] -= 5;
     if (userInput[i] < 0) {
       userInput[i] += 12;
-    }
-    else if(userInput[i] === "0") {
+    } else if (userInput[i] === "0") {
       userInput[i] = 12;
     }
   }
@@ -263,10 +262,10 @@ function showKey() {
 }
 
 function showPianoKey() {
-    pianoToStandard();
-    findStandardKey();
-    document.getElementById("majorBotP").innerHTML = theMajor;
-    document.getElementById("minorBotP").innerHTML = theMinor;
+  pianoToStandard();
+  findStandardKey();
+  document.getElementById("majorBotP").innerHTML = theMajor;
+  document.getElementById("minorBotP").innerHTML = theMinor;
 }
 
 // Tuning click change updates Tab View diagram with selection
@@ -401,7 +400,7 @@ function findStandardKey() {
     theScale = "Enter a scale!";
   }
 
-  return(theScale);
+  return (theScale);
 }
 
 // On [enter] press
@@ -436,8 +435,7 @@ function pianoReceiver() {
       userInput.push(np1);
       if (np1 === 1) {
         document.getElementById("k1").className = "hiddenPiano";
-      }
-      else if (np1 === 2){
+      } else if (np1 === 2) {
         document.getElementById("k2").className = "hiddenPiano";
       }
     }
@@ -445,20 +443,16 @@ function pianoReceiver() {
     np2 = x;
     if (x < 2 || x > 4 || (np2 - np1) > 2) {
       swal("Please enter valid second note!");
-    }      else if (document.getElementById("k2").
-      className === "hiddenPiano" && np2 === "2") {
-        swal("Please enter valid second note!");
-      }
-     else {
+    } else if (document.getElementById("k2").className === "hiddenPiano" && np2 === "2") {
+      swal("Please enter valid second note!");
+    } else {
       np2 = parseInt(np2);
       userInput.push(np2);
       if (np2 === 2) {
         document.getElementById("k2").className = "hiddenPiano";
-      }
-      else if (np2 === 3){
+      } else if (np2 === 3) {
         document.getElementById("k3").className = "hiddenPiano";
-      }
-      else if (np2 === 4){
+      } else if (np2 === 4) {
         document.getElementById("k4").className = "hiddenPiano";
       }
     }
@@ -466,18 +460,16 @@ function pianoReceiver() {
     np3 = x;
     if (np3 > 6 || np3 < 4 || (np3 - np2) > 2 || (np3 - np2 < 1)) {
       swal("Please enter valid third note!");
-    } else if ((np3 - np2) === 1 && (np2-np1) === 1) {
+    } else if ((np3 - np2) === 1 && (np2 - np1) === 1) {
       swal("Please enter valid third note!");
     } else {
       np3 = parseInt(np3);
       userInput.push(np3);
       if (np3 === 4) {
         document.getElementById("k4").className = "hiddenPiano";
-      }
-      else if (np3 === 5){
+      } else if (np3 === 5) {
         document.getElementById("k5").className = "hiddenPiano";
-      }
-      else if (np3 === 6){
+      } else if (np3 === 6) {
         document.getElementById("k6").className = "hiddenPiano";
       }
     }
@@ -485,15 +477,14 @@ function pianoReceiver() {
     np4 = x;
     if (np4 > 7 || np4 < 6 || (np4 - np3) > 2 || (np4 - np3) < 1) {
       swal("Please enter valid fourth note!");
-    } else if ((np4 - np3) === 1 && (np3-np2) === 1) {
+    } else if ((np4 - np3) === 1 && (np3 - np2) === 1) {
       swal("Please enter valid fourth note!");
     } else {
       np4 = parseInt(np4);
       userInput.push(np4);
       if (np4 === 6) {
         document.getElementById("k6").className = "hiddenPiano";
-      }
-      else if (np4 === 7){
+      } else if (np4 === 7) {
         document.getElementById("k7").className = "hiddenPiano";
       }
     }
@@ -501,41 +492,37 @@ function pianoReceiver() {
     np5 = x;
     if (np5 > 9 || np5 < 7 || (np5 - np4) > 2 || (np5 - np4) < 1) {
       swal("Please enter valid fifth note!");
-    } else if ((np5 - np4) === 1 && (np4-np3) === 1) {
+    } else if ((np5 - np4) === 1 && (np4 - np3) === 1) {
       swal("Please enter valid fifth note!");
-    } else if ((np5 - np4) === 2 && (np4-np3) === 2 && (np3-np2) === 2 && (np2-np1) === 2) {
+    } else if ((np5 - np4) === 2 && (np4 - np3) === 2 && (np3 - np2) === 2 && (np2 - np1) === 2) {
       swal("Please enter valid fifth note!");
     } else {
       np5 = parseInt(np5);
       userInput.push(np5);
       if (np5 === 7) {
         document.getElementById("k7").className = "hiddenPiano";
-      }
-      else if (np5 === 8){
+      } else if (np5 === 8) {
         document.getElementById("k8").className = "hiddenPiano";
-      }
-      else if (np3 === 9){
+      } else if (np3 === 9) {
         document.getElementById("k9").className = "hiddenPiano";
       }
     }
   } else if (userInput.length === 5) {
     np6 = x;
-    if (np6 > 11 || np6 < 9 || (np6 - np5 < 1) || (np6-np5) > 2) {
+    if (np6 > 11 || np6 < 9 || (np6 - np5 < 1) || (np6 - np5) > 2) {
       swal("Please enter valid sixth note!");
-    } else if ((np6 - np5) === 1 && (np5-np4) === 1) {
+    } else if ((np6 - np5) === 1 && (np5 - np4) === 1) {
       swal("Please enter valid sixth note!");
-    } else if ((np6 - np5) === 2 && (np5-np4) === 2 && (np4-np3) === 2 && (np3-np2) === 2) {
+    } else if ((np6 - np5) === 2 && (np5 - np4) === 2 && (np4 - np3) === 2 && (np3 - np2) === 2) {
       swal("Please enter valid sixth note!");
     } else {
       np6 = parseInt(np6);
       userInput.push(np6);
       if (np6 === 9) {
         document.getElementById("k9").className = "hiddenPiano";
-      }
-      else if (np6 === 10){
+      } else if (np6 === 10) {
         document.getElementById("k10").className = "hiddenPiano";
-      }
-      else if (np6 === 11){
+      } else if (np6 === 11) {
         document.getElementById("k11").className = "hiddenPiano";
       }
     }
@@ -543,17 +530,16 @@ function pianoReceiver() {
     np7 = x;
     if (np7 > 12 || np7 < 11 || (np7 - np6 < 1) || (np7 - np6 > 2)) {
       swal("Please enter valid last note!");
-    } else if ((np7 - np6) === 1 && (np6-np5) === 1) {
+    } else if ((np7 - np6) === 1 && (np6 - np5) === 1) {
       swal("Please enter valid last note!");
-    } else if ((np7 - np6) === 2 && (np6-np5) === 2 && (np5-np4) === 2 && (np4-np3) === 2) {
+    } else if ((np7 - np6) === 2 && (np6 - np5) === 2 && (np5 - np4) === 2 && (np4 - np3) === 2) {
       swal("Please enter valid last note!");
     } else {
       np7 = parseInt(np7);
       userInput.push(np7);
       if (np7 === 11) {
         document.getElementById("k11").className = "hiddenPiano";
-      }
-      else if (np7 === 12){
+      } else if (np7 === 12) {
         document.getElementById("k12").className = "hiddenPiano";
       }
       showPianoKey();
@@ -576,8 +562,7 @@ function pianoReceiver() {
       userInput.push(np1);
       if (np1 === 1) {
         document.getElementById("k1").className = "hiddenPiano";
-      }
-      else if (np1 === 2){
+      } else if (np1 === 2) {
         document.getElementById("k2").className = "hiddenPiano";
       }
     }

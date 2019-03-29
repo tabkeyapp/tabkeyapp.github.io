@@ -9,26 +9,26 @@ body {
   color: #fff;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
   font-size: 14px;
-margin-top: 0px;
-text-indent: 0px;
-font-family: 'Open Sans', sans-serif;
-letter-spacing: 0px;
-line-height: 22px;
-font-weight: light;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  margin-top: 0px;
+  text-indent: 0px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0px;
+  line-height: 22px;
+  font-weight: light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 b {
   font-size: 30px;
   margin-bot: 0px;
   -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #pianoHeadersWrap {
@@ -43,14 +43,13 @@ b {
 }
 
 #majorTopP, #minorTopP, #majorBotP, #minorBotP {
-display: inline-block;
-text-align: center;
+  display: inline-block;
+  text-align: center;
   width: 50%;
   height: 70px;
   background-color: transparent;
   font-size: 30px;
-float:left;
-
+  float: left;
 }
 
 #headerTopP, #headerBotP {
@@ -89,7 +88,7 @@ float:left;
 #navLinks {
   width: 200px;
   float: left;
-  min-height:60px;
+  min-height: 60px;
   position: relative;
   top: 7px;
 }
@@ -121,7 +120,7 @@ float:left;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color:rgba(20, 20, 20, 0.9);
+  background-color: rgba(20, 20, 20, 0.9);
 }
 
 #userTextBox, #userTextBoxPiano {
@@ -199,6 +198,7 @@ float:left;
   -o-transition: opacity .5s linear;
   z-index: 0;
 }
+
 .showPiano {
   opacity: 1;
   transition: opacity .5s linear;
@@ -216,6 +216,7 @@ float:left;
   -o-transition: opacity .5s linear;
   z-index: 0;
 }
+
 .show {
   opacity: 1;
   transition: opacity .5s linear;
@@ -255,15 +256,15 @@ float:left;
   vertical-align: middle;
 }
 
-
 .custom-dropdown select {
   background: linear-gradient(270deg, #3c3748, #4f4c26, #27486d);
   background-size: 600% 600%;
   -webkit-animation: listGradient 30s ease infinite;
   -moz-animation: listGradient 30s ease infinite;
   animation: listGradient 30s ease infinite;
-  background-color:rgba(20, 20, 20, .9);
-  color: #ffffff; /* Font color */
+  background-color: rgba(20, 20, 20, .9);
+  color: #ffffff;
+  /* Font color */
   font-size: inherit;
   font-family: 'kalam', cursive;
   padding: .5em;
@@ -271,15 +272,14 @@ float:left;
   border: 0;
   margin: 0;
   border-radius: 3px;
-
   text-overflow: '';
-  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+  -webkit-appearance: button;
+  /* hide default arrow in chrome OSX */
   -moz-appearance: button;
 }
 
 .custom-dropdown::before,
 .custom-dropdown::after {
-
   content: "";
   position: absolute;
   pointer-events: none;
@@ -294,7 +294,6 @@ float:left;
   right: 1.2em;
   top: 50%;
   margin-top: -.5em;
-
 }
 
 .custom-dropdown::before {
@@ -316,6 +315,7 @@ float:left;
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-right:before {
   content: "";
   position: absolute;
@@ -332,6 +332,7 @@ float:left;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before,
 .hvr-underline-from-right:active:before {
   left: 0;
@@ -347,6 +348,7 @@ float:left;
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-reveal:before {
   content: "";
   position: absolute;
@@ -365,320 +367,322 @@ float:left;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before,
 .hvr-underline-reveal:active:before {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
-#faqDiv::-webkit-scrollbar-track, #howToDiv::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #2b2b2b;
+#faqDiv::-webkit-scrollbar-track, #howToDiv::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #2b2b2b;
 }
 
-#faqDiv::-webkit-scrollbar, #howToDiv::-webkit-scrollbar
-{
-	width: 8px;
-	background-color: #2b2b2b;
+#faqDiv::-webkit-scrollbar, #howToDiv::-webkit-scrollbar {
+  width: 8px;
+  background-color: #2b2b2b;
 }
 
-#faqDiv::-webkit-scrollbar-thumb, #howToDiv::-webkit-scrollbar-thumb
-{
-	background-color: #fff;
-	border: 0px solid #555555;
+#faqDiv::-webkit-scrollbar-thumb, #howToDiv::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border: 0px solid #555555;
 }
-
 
 @-webkit-keyframes listGradient {
-0% {
-  background-position:0% 50%
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
-50% {
-  background-position:100% 50%
-}
-100% {
-  background-position:0% 50%
-}
-}
+
 @-moz-keyframes listGradient {
-0% {
-  background-position:0% 50%
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
-50% {
-  background-position:100% 50%
-}
-100% {
-  background-position:0% 50%
-}
-}
+
 @keyframes listGradient {
-0% {
-  background-position:0% 50%
-}
-50% {
-  background-position:100% 50%
-}
-100% {
-  background-position:0% 50%
-}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 #inputPianoDiv {
   margin: 0 auto;
   top: 520px;
   position: absolute;
-
 }
 
 #pianoViewDiv {
-left: 200px;
-
+  left: 200px;
   margin-top: -30px;
   position: relative;
-text-align: center;
-
+  text-align: center;
 }
 
 #topPianoWrap {
-left: 70px;
+  left: 70px;
   top: 0;
   display: block;
-	position: absolute;
-	width:558px;
-	height:351px;
+  position: absolute;
+  width: 558px;
+  height: 351px;
   z-index: 1;
 }
 
 #TopPiano-01 {
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:123px;
-	height:242px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 123px;
+  height: 242px;
 }
 
 #TopPiano-02 {
-	position:absolute;
-	left:123px;
-	top:0px;
-	width:84px;
-	height:242px;
+  position: absolute;
+  left: 123px;
+  top: 0px;
+  width: 84px;
+  height: 242px;
 }
 
 #TopPiano-03 {
-	position:absolute;
-	left:207px;
-	top:0px;
-	width:72px;
-	height:242px;
+  position: absolute;
+  left: 207px;
+  top: 0px;
+  width: 72px;
+  height: 242px;
 }
 
 #TopPiano-04 {
-	position:absolute;
-	left:279px;
-	top:0px;
-	width:78px;
-	height:242px;
+  position: absolute;
+  left: 279px;
+  top: 0px;
+  width: 78px;
+  height: 242px;
 }
 
 #TopPiano-05 {
-	position:absolute;
-	left:357px;
-	top:0px;
-	width:77px;
-	height:242px;
+  position: absolute;
+  left: 357px;
+  top: 0px;
+  width: 77px;
+  height: 242px;
 }
 
 #TopPiano-06 {
-	position:absolute;
-	left:434px;
-	top:0px;
-	width:80px;
-	height:242px;
+  position: absolute;
+  left: 434px;
+  top: 0px;
+  width: 80px;
+  height: 242px;
 }
 
 #TopPiano-07 {
-	position:absolute;
-	left:514px;
-	top:0px;
-	width:44px;
-	height:242px;
+  position: absolute;
+  left: 514px;
+  top: 0px;
+  width: 44px;
+  height: 242px;
 }
 
 #TopPiano-08 {
-	position:absolute;
-	left:0px;
-	top:242px;
-	width:84px;
-	height:109px;
+  position: absolute;
+  left: 0px;
+  top: 242px;
+  width: 84px;
+  height: 109px;
 }
 
 #TopPiano-09 {
-	position:absolute;
-	left:84px;
-	top:242px;
-	width:79px;
-	height:109px;
+  position: absolute;
+  left: 84px;
+  top: 242px;
+  width: 79px;
+  height: 109px;
 }
 
 #TopPiano-10 {
-	position:absolute;
-	left:163px;
-	top:242px;
-	width:79px;
-	height:109px;
+  position: absolute;
+  left: 163px;
+  top: 242px;
+  width: 79px;
+  height: 109px;
 }
 
 #TopPiano-11 {
-	position:absolute;
-	left:242px;
-	top:242px;
-	width:77px;
-	height:109px;
+  position: absolute;
+  left: 242px;
+  top: 242px;
+  width: 77px;
+  height: 109px;
 }
 
 #TopPiano-12 {
-	position:absolute;
-	left:319px;
-	top:242px;
-	width:77px;
-	height:109px;
+  position: absolute;
+  left: 319px;
+  top: 242px;
+  width: 77px;
+  height: 109px;
 }
 
 #TopPiano-13 {
-	position:absolute;
-	left:396px;
-	top:242px;
-	width:78px;
-	height:109px;
+  position: absolute;
+  left: 396px;
+  top: 242px;
+  width: 78px;
+  height: 109px;
 }
 
 #TopPiano-14 {
-	position:absolute;
-	left:474px;
-	top:242px;
-	width:84px;
-	height:109px;
+  position: absolute;
+  left: 474px;
+  top: 242px;
+  width: 84px;
+  height: 109px;
 }
 
 #bottomPianoWrap {
   top: 0;
   left: 70px;
-	position: absolute;
-	width:558px;
-	height:351px;
+  position: absolute;
+  width: 558px;
+  height: 351px;
   z-index: 0;
 }
 
 #BottomPiano-01 {
-	position:absolute;
-	left:0px;
-	top:0px;
-	width:123px;
-	height:242px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 123px;
+  height: 242px;
 }
 
 #BottomPiano-02 {
-	position:absolute;
-	left:123px;
-	top:0px;
-	width:84px;
-	height:242px;
+  position: absolute;
+  left: 123px;
+  top: 0px;
+  width: 84px;
+  height: 242px;
 }
 
 #BottomPiano-03 {
-	position:absolute;
-	left:207px;
-	top:0px;
-	width:72px;
-	height:242px;
+  position: absolute;
+  left: 207px;
+  top: 0px;
+  width: 72px;
+  height: 242px;
 }
 
 #BottomPiano-04 {
-	position:absolute;
-	left:279px;
-	top:0px;
-	width:78px;
-	height:242px;
+  position: absolute;
+  left: 279px;
+  top: 0px;
+  width: 78px;
+  height: 242px;
 }
 
 #BottomPiano-05 {
-	position:absolute;
-	left:357px;
-	top:0px;
-	width:77px;
-	height:242px;
+  position: absolute;
+  left: 357px;
+  top: 0px;
+  width: 77px;
+  height: 242px;
 }
 
 #BottomPiano-06 {
-	position:absolute;
-	left:434px;
-	top:0px;
-	width:80px;
-	height:242px;
+  position: absolute;
+  left: 434px;
+  top: 0px;
+  width: 80px;
+  height: 242px;
 }
 
 #BottomPiano-07 {
-	position:absolute;
-	left:514px;
-	top:0px;
-	width:44px;
-	height:242px;
+  position: absolute;
+  left: 514px;
+  top: 0px;
+  width: 44px;
+  height: 242px;
 }
 
 #BottomPiano-08 {
-	position:absolute;
-	left:0px;
-	top:242px;
-	width:84px;
-	height:109px;
+  position: absolute;
+  left: 0px;
+  top: 242px;
+  width: 84px;
+  height: 109px;
 }
 
 #BottomPiano-09 {
-	position:absolute;
-	left:84px;
-	top:242px;
-	width:79px;
-	height:109px;
+  position: absolute;
+  left: 84px;
+  top: 242px;
+  width: 79px;
+  height: 109px;
 }
 
 #BottomPiano-10 {
-	position:absolute;
-	left:163px;
-	top:242px;
-	width:79px;
-	height:109px;
+  position: absolute;
+  left: 163px;
+  top: 242px;
+  width: 79px;
+  height: 109px;
 }
 
 #BottomPiano-11 {
-	position:absolute;
-	left:242px;
-	top:242px;
-	width:77px;
-	height:109px;
+  position: absolute;
+  left: 242px;
+  top: 242px;
+  width: 77px;
+  height: 109px;
 }
 
 #BottomPiano-12 {
-	position:absolute;
-	left:319px;
-	top:242px;
-	width:77px;
-	height:109px;
+  position: absolute;
+  left: 319px;
+  top: 242px;
+  width: 77px;
+  height: 109px;
 }
 
 #BottomPiano-13 {
-	position:absolute;
-	left:396px;
-	top:242px;
-	width:78px;
-	height:109px;
+  position: absolute;
+  left: 396px;
+  top: 242px;
+  width: 78px;
+  height: 109px;
 }
 
 #BottomPiano-14 {
-	position:absolute;
-	left:474px;
-	top:242px;
-	width:84px;
-	height:109px;
+  position: absolute;
+  left: 474px;
+  top: 242px;
+  width: 84px;
+  height: 109px;
 }
