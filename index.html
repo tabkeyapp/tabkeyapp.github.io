@@ -51,20 +51,17 @@
       </div>
       <div id="social">
 
-        <a href="https://twitter.com/tabkeyapp?ref_src=twsrc%5Etfw"
-          class="twitter-follow-button" data-show-count="false">Follow</a>
-        <script async src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"></script>
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-          class="twitter-share-button" data-show-count="false">Tweet</a>
-        <script async src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"></script>
-        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftabkeyapp%2F&width=106&layout=button_count&action=like&size=small&show_faces=false&share=true&height=46&appId" width="106" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        <a href="https://twitter.com/tabkeyapp?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftabkeyapp%2F&width=106&layout=button_count&action=like&size=small&show_faces=false&share=true&height=46&appId" width="106" height="46"
+          style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
       </div>
     </div>
     <div id="contentDiv">
 
-      <div id="tabViewDiv" class="hidden" style="width:700px">
+      <div id="tabViewDiv" class="show" style="width:700px">
         <div id="neck1" style="width:668px">
           <div class="stringCell" id="gs1">
             -
@@ -396,8 +393,7 @@
           </span>
         </div>
         <div id="inputDiv" style="width:100%">
-          <input id="userTextBox" placeholder="Enter your notes here!"
-          onkeydown="giveGuitar(this)" autocomplete="off">
+          <input id="userTextBox" placeholder="Enter your notes here!" onkeydown="giveGuitar(this)" autocomplete="off">
         </div>
 
         <div id="theKey" style="width:100%">
@@ -510,8 +506,7 @@
           </div>
         </div>
         <div id="inputPianoDiv" style="width:100%">
-          <input id="userTextBoxPiano" placeholder="Enter your notes here!"
-          onkeydown="givePiano(this)" autocomplete="off">
+          <input id="userTextBoxPiano" placeholder="Enter your notes here!" onkeydown="givePiano(this)" autocomplete="off">
         </div>
 
       </div>
@@ -522,13 +517,13 @@
         </p>
         <p>
           Enter your notes as they would appear on your lowest string (deepest
-          pitch and thickest gauge) starting with the lowest note possible.  "0"
+          pitch and thickest gauge) starting with the lowest note possible. "0"
           is open, "1" is the first fret, and so on!
         </p>
         <img src="guitarneckhowto.png">
         <p>
           Once TabKey receives enough notes, it will show you the major and
-          relative minor key that your notes are in.  To try another scale or
+          relative minor key that your notes are in. To try another scale or
           tuning, just enter in more numbers and the program starts over!
         </p>
         <p style="font-size: 12px;">
@@ -536,103 +531,104 @@
         </p>
 
       </div>
-      <div id="faqDiv" class="show" style="width:700px;">
+      <div id="faqDiv" class="hidden" style="width:700px;">
         <b>Is TabKey free?</b><BR>
+        <p>
+          Yes! 100% free!
+        </p>
+
+
+        <b>What is TabKey?</b><BR>
+        <p>
+          TabKey is made to find the major and relative minor your scale is
+          in.
+        </p>
+
+        <b>Who is Tabkey for?</b><BR>
+        <p>
+          TabKey is for musicians.
+        </p>
+        <b>I play bass, will TabKey work for me?</b><BR>
+        <p>
+          Yes! Simply disregard the highest two strings in the tab
+          diagram (B and high e in standard tuning).
+        </p>
+
+        <b>What purpose does TabKey serve?</b><BR>
+        <p>
+          You might be a beginner interested in music theory. Use
+          TabKey to learn and experiment!
           <p>
-            Yes!  100% free!
+            Maybe you're a guitarist unfamiliar with sheet music or
+            keys. Knowing what key your song is in can help you write
+            more musical-sounding lead parts, chord progressions, or
+            transitions. <br>
+
+          </p>
+          <p>
+            Perhaps you're in the studio. Does your pitch correction
+            plug-in accept keys? TabKey can help! Need the root note
+            for your EQ or subharmonic exciter? Make mixing musical
+            with TabKey. Need control over your synth or arrpegiator?
+            <i>Hello, TabKey!</i>
+          </p>
+          <p>
+            TabKey can serve many purposes. Let us know what YOU use
+            it for!
           </p>
 
+          <b>I found a bug or error.</b><BR>
+          <p>
+            That's great! Let us know on Facebook or Twitter so we
+            can fix that noise as soon as possible. Thanks in
+            advance!
+          </p>
+          <b>I have a suggestion!</b><BR>
+          <p>
+            Wonderful! TabKey currently only has a presence on
+            Facebook and Twitter. If you're interested in
+            communicating through either of those channels, I'd
+            love to hear your idea!
+          </p>
+          <b>When will (insert feature here) be added?</b><BR>
+          <p>
+            TabKey has little more than basic functionality
+            right now, but it's just getting started! There are
+            new things in development and new ideas are on deck.
+            However, potential features may be difficult
+            to implement, and some might be impractical or
+            impossible.
+          </p>
+          <p>
+            In the interest of full disclosure, here I'll try
+            to maintain a list of features in the works with
+            the following disclaimer: <u>Nothing is set in
+              stone until it's live.</u>
+          </p>
+          <ul>
+            <li><s>Piano mode</s> (Live!)</li>
+            <li>Neck view (in development)</li>
+            <li>Bass view (concept)</li>
+            <li>Display notes in the chosen scale (concept)</li>
+            <li>Display entered notes in real time</li>
+            <li>Mobile browser support</li>
+            <li>Additional instrument support</li>
+          </ul>
+          <p>
+            I fully intend to bring all of the items in this
+            list to fruition, but I reserve the right to remove
+            them if they just aren't working. You can expect
+            items marked as (in development) soon! There's a
+            good chance and/or a moderate timeline on (concept)s,
+            and items at the bottom of the list haven't been
+            started.
+          </p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/TabKey.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+  </script>
+</body>
 
-          <b>What is TabKey?</b><BR>
-            <p>
-              TabKey is made to find the major and relative minor your scale is
-              in.
-            </p>
-
-            <b>Who is Tabkey for?</b><BR>
-              <p>
-                TabKey is for musicians.
-              </p>
-              <b>I play bass, will TabKey work for me?</b><BR>
-                <p>
-                  Yes!  Simply disregard the highest two strings in the tab
-                  diagram (B and high e in standard tuning).
-                </p>
-
-                <b>What purpose does TabKey serve?</b><BR>
-                  <p>
-                    You might be a beginner interested in music theory.  Use
-                    TabKey to learn and experiment!
-                    <p>
-                      Maybe you're a guitarist unfamiliar with sheet music or
-                      keys.  Knowing what key your song is in can help you write
-                      more musical-sounding lead parts, chord progressions, or
-                      transitions.  <br>
-
-                    </p>
-                    <p>
-                      Perhaps you're in the studio.  Does your pitch correction
-                      plug-in accept keys?  TabKey can help!  Need the root note
-                      for your EQ or subharmonic exciter?  Make mixing musical
-                      with TabKey.  Need control over your synth or arrpegiator?
-                      <i>Hello, TabKey!</i>
-                    </p>
-                    <p>
-                      TabKey can serve many purposes.  Let us know what YOU use
-                      it for!
-                    </p>
-
-                    <b>I found a bug or error.</b><BR>
-                      <p>
-                        That's great!  Let us know on Facebook or Twitter so we
-                        can fix that noise as soon as possible.  Thanks in
-                        advance!
-                      </p>
-                      <b>I have a suggestion!</b><BR>
-                        <p>
-                          Wonderful!  TabKey currently only has a presence on
-                          Facebook and Twitter.  If you're interested in
-                          communicating through either of those channels, I'd
-                          love to hear your idea!
-                        </p>
-                        <b>When will (insert feature here) be added?</b><BR>
-                          <p>
-                            TabKey has little more than basic functionality
-                            right now, but it's just getting started!  There are
-                            new things in development and new ideas are on deck.
-                            However, potential features may be difficult
-                            to implement, and some might be impractical or
-                            impossible.
-                          </p>
-                          <p>
-                            In the interest of full disclosure, here I'll try
-                            to maintain a list of features in the works with
-                            the following disclaimer: <u>Nothing is set in
-                              stone until it's live.</u>
-                          </p>
-                          <ul>
-                            <li><s>Piano mode</s> (Live!)</li>
-                            <li>Neck view (in development)</li>
-                            <li>Bass view (concept)</li>
-                            <li>Display notes in the chosen scale (concept)</li>
-                            <li>Display entered notes in real time</li>
-                            <li>Mobile browser support</li>
-                            <li>Additional instrument support</li>
-                          </ul>
-                          <p>
-                            I fully intend to bring all of the items in this
-                            list to fruition, but I reserve the right to remove
-                            them if they just aren't working.  You can expect
-                            items marked as (in development) soon!  There's a
-                            good chance and/or a moderate timeline on (concept)s,
-                            and items at the bottom of the list haven't been
-                            started.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <script type="text/javascript" src="js/TabKey.js"></script>
-                    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
-                    </script>
-                  </body>
-                </html>
+</html>
