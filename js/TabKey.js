@@ -282,7 +282,7 @@ function keyChange() {
     document.getElementById("gs5").innerHTML = " G#";
     document.getElementById("note").innerHTML = "D#";
     tuning = document.getElementById("list").value;
-    moveLeft.style.left = "-16px";
+    moveLeft.style.left = "0px";
   } else if (document.getElementById("list").value === "D") {
     document.getElementById("gs1").innerHTML = " d";
     document.getElementById("gs2").innerHTML = " A";
@@ -309,7 +309,7 @@ function keyChange() {
     document.getElementById("gs5").innerHTML = "G#";
     document.getElementById("note").innerHTML = "C#";
     tuning = document.getElementById("list").value;
-    moveLeft.style.left = "-16px";
+    moveLeft.style.left = "-0px";
   } else if (document.getElementById("list").value === "C") {
     document.getElementById("gs1").innerHTML = " d";
     document.getElementById("gs2").innerHTML = " A";
