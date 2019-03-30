@@ -5,12 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/KTstyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans" rel="stylesheet">
+  <script type="text/javascript">
+    $(window).load(function() {
+      $(".loader").fadeOut("slow");
+    });
+  </script>
 </head>
 
 <body>
+  <div class="loader"></div>
   <div id="fb-root"></div>
   <div id="pageDiv">
     <div id="nav">

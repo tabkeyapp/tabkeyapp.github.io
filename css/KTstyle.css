@@ -1,6 +1,18 @@
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../splash.png') 50% 50% no-repeat rgb(43, 43, 43);
+  opacity: .991;
+}
+
 body {
   background-image: url('../KTBG3.jpg');
   background-repeat: no-repeat;
+  background-color: #2b2b2b;
   background-attachment: fixed;
   background-position: center;
   align-items: center;
