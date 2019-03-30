@@ -161,6 +161,7 @@ b {
   text-align: left;
   float: right;
   overflow-y: auto;
+  display: hidden;
 }
 
 #faqDiv {
@@ -174,6 +175,7 @@ b {
   text-align: left;
   float: right;
   overflow-y: auto;
+  display: hidden;
 }
 
 #social {
@@ -442,6 +444,7 @@ b {
   margin-top: -30px;
   position: relative;
   text-align: center;
+  display: hidden;
 }
 
 #topPianoWrap {

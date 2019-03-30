@@ -9,12 +9,10 @@ var theMajor;
 var theMinor;
 var theNotes;
 var moveLeft = document.querySelector("#tabViewDiv");
-
 var n1, n2, n3, n4, n5, n6, n7; //  Guitar note variables
 var np1, np2, np3, np4, np5, np6, np7; //  Piano note variables
 var x;
 var tuning;
-
 
 /* Major keys in standard tuning
 var cMajStandard = [0,1,3,5,7,8,10];
@@ -30,9 +28,6 @@ var aFlatMajStandard = [1, 3, 4, 6, 8, 9, 11];
 var dFlatMajStandard = [1, 2, 4, 6, 8, 9, 11];
 var gFlatMajStandard = [1, 2, 4, 6, 7, 9, 11];
 */
-
-
-
 
 // Gets input from text box depending on ranges
 // Pushes answer info to page and array
