@@ -20,6 +20,7 @@
 
   <div class="loader"></div>
   <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
   <div id="pageDiv">
     <div id="nav">
       <div id="logo">
@@ -38,7 +39,8 @@
             <img src="tabview.png"></a>
         </div>
         <div id="neckViewButton" class="sideButton">
-          <img src="neckview.png">
+          <a class="hvr-underline-from-right" onClick="neckView();">
+            <img src="neckview.png"></a>
         </div>
         <div id="pianoButton" class="sideButton">
           <a class="hvr-underline-from-right" onClick="pianoView();">
@@ -63,13 +65,13 @@
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftabkeyapp%2F&width=106&layout=button_count&action=like&size=small&show_faces=false&share=true&height=46&appId" width="106" height="46"
           style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-        <div style="margin-top: -24px; font-size: 11px; font-weight: light;">Copyright TabKey 2019</div>
+        <div style="margin-top: -20px; font-size: 11px; font-weight: light;">Copyright TabKey 2019</div>
       </div>
 
     </div>
     <div id="contentDiv">
 
-      <DIV id="neckView" class="showKey">
+      <DIV id="neckView" class="hidden">
 
         <DIV ID="gNeckWrapper">
           <DIV ID="gNeck1">
@@ -496,7 +498,23 @@
             <IMG SRC="images/gNeck141.png" WIDTH="34" HEIGHT="11" ALT="">
           </DIV>
         </DIV>
-
+        <div id="neckHeadersWrap">
+          <div id="headerTopN">
+            <div id="majorTopN">
+              <img src="major.png">
+            </div>
+            <div id="minorTopN">
+              <img src="minor.png">
+            </div>
+          </div>
+          <div id="headerBotN">
+            <div id="majorBotN"></div>
+            <div id="minorBotN"></div>
+          </div>
+        </div>
+        <div id="inputNeckDiv" style="width:100%">
+          <input id="userTextBoxNeck" placeholder="Enter your notes here!" onkeydown="givePiano(this)" autocomplete="off">
+        </div>
       </DIV>
 
       <div id="tabViewDiv" class="hidden" style="width:700px">

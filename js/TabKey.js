@@ -570,6 +570,8 @@ function tabView() {
   document.getElementById("howToDiv").className = "hidden";
   document.getElementById("faqDiv").className = "hidden";
   document.getElementById("pianoViewDiv").className = "hidden";
+  document.getElementById("neckView").className = "hidden";
+
   userInput = [];
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
@@ -594,6 +596,7 @@ function howToView() {
   document.getElementById("howToDiv").className = "show";
   document.getElementById("faqDiv").className = "hidden";
   document.getElementById("pianoViewDiv").className = "hidden";
+  document.getElementById("neckView").className = "hidden";
   userInput = [];
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
@@ -618,6 +621,7 @@ function faqView() {
   document.getElementById("howToDiv").className = "hidden";
   document.getElementById("faqDiv").className = "show";
   document.getElementById("pianoViewDiv").className = "hidden";
+  document.getElementById("neckView").className = "hidden";
   userInput = [];
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
@@ -642,6 +646,32 @@ function pianoView() {
   document.getElementById("howToDiv").className = "hidden";
   document.getElementById("faqDiv").className = "hidden";
   document.getElementById("pianoViewDiv").className = "show";
+  document.getElementById("neckView").className = "hidden";
+  userInput = [];
+  document.getElementById("s1").innerHTML = "-";
+  document.getElementById("s2").innerHTML = "-";
+  document.getElementById("s3").innerHTML = "-";
+  document.getElementById("s4").innerHTML = "-";
+  document.getElementById("s5").innerHTML = "-";
+  document.getElementById("s6").innerHTML = "-";
+  document.getElementById("s7").innerHTML = "-";
+  document.getElementById("s8").innerHTML = "-";
+  var hiddenLen = document.querySelectorAll(".hiddenPiano");
+  var hiddenArr = [];
+  for (var i = 0; i < hiddenLen.length; i++) {
+    hiddenArr.push(hiddenLen[i]);
+  }
+  for (var i = 0; i < hiddenArr.length; i++) {
+    hiddenArr[i].className = "showPiano";
+  }
+}
+
+function neckView() {
+  document.getElementById("tabViewDiv").className = "hidden";
+  document.getElementById("howToDiv").className = "hidden";
+  document.getElementById("faqDiv").className = "hidden";
+  document.getElementById("pianoViewDiv").className = "hidden";
+  document.getElementById("neckView").className = "show";
   userInput = [];
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";

@@ -45,6 +45,7 @@ b {
 
 #neckView {
   left: 200px;
+  top: 50px;
   position: relative;
   text-align: center;
 }
@@ -57,6 +58,17 @@ b {
   margin-top: -30px;
   display: block;
   position: relative;
+}
+
+#neckHeadersWrap {
+  border-radius: 4px;
+  vertical-align: middle;
+  text-align: center;
+  float: right;
+  margin-top: -250px;
+  display: block;
+  position: relative;
+  width: 700px;
 }
 
 #pianoHeadersWrap {
@@ -85,12 +97,31 @@ b {
   height: 55px;
 }
 
+#headerTopN, #headerBotN {
+  background-color: transparent;
+  height: 55px;
+}
+
+#majorTopN, #minorTopN, #majorBotN, #minorBotN {
+  float: left;
+  width: 50%;
+  height: 70px;
+  background-color: transparent;
+  font-size: 30px;
+}
+
 #majorTop, #minorTop, #majorBot, #minorBot {
   float: left;
   width: 50%;
   height: 70px;
   background-color: transparent;
   font-size: 30px;
+}
+
+#inputNeckDiv {
+  top: 500px;
+  left: -100px;
+  position: absolute;
 }
 
 #headerTop, #headerBot {
@@ -155,7 +186,7 @@ b {
   margin-top: 15px;
 }
 
-#userTextBox, #userTextBoxPiano {
+#userTextBox, #userTextBoxPiano, #userTextBoxNeck {
   width: 700px;
   padding: 12px 20px;
   margin: 0px;
@@ -208,10 +239,6 @@ b {
   position: absolute;
   bottom: 120px;
   right: 770px;
-}
-
-#neckViewButton {
-  opacity: .5;
 }
 
 .hiddenPiano {
