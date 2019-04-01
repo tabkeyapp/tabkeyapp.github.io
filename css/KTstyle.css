@@ -43,6 +43,22 @@ b {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#neckView {
+  left: 200px;
+  position: relative;
+  text-align: center;
+}
+
+#tabViewDiv {
+  border-radius: 4px;
+  vertical-align: middle;
+  text-align: center;
+  float: right;
+  margin-top: -30px;
+  display: block;
+  position: relative;
+}
+
 #pianoHeadersWrap {
   border-radius: 4px;
   vertical-align: middle;
@@ -150,16 +166,6 @@ b {
   font: 1.5em/1.5em 'kalam', cursive;
   text-align: center;
   height: 60px;
-}
-
-#tabViewDiv {
-  border-radius: 4px;
-  vertical-align: middle;
-  text-align: center;
-  float: right;
-  margin-top: -30px;
-  display: block;
-  position: relative;
 }
 
 #contentDiv {
@@ -704,4 +710,1147 @@ b {
   top: 242px;
   width: 84px;
   height: 109px;
+}
+
+/*
+
+
+Neck styles start here!!!
+
+
+*/
+#gNeckWrapper {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 700px;
+  height: 130px;
+}
+
+#gNeck1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck2 {
+  position: absolute;
+  left: 34px;
+  top: 0px;
+  width: 45px;
+  height: 45px;
+}
+
+#gNeck3 {
+  position: absolute;
+  left: 79px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck4 {
+  position: absolute;
+  left: 113px;
+  top: 0px;
+  width: 34px;
+  height: 45px;
+}
+
+#gNeck5 {
+  position: absolute;
+  left: 147px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck6 {
+  position: absolute;
+  left: 181px;
+  top: 0px;
+  width: 33px;
+  height: 45px;
+}
+
+#gNeck7 {
+  position: absolute;
+  left: 214px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck8 {
+  position: absolute;
+  left: 248px;
+  top: 0px;
+  width: 26px;
+  height: 45px;
+}
+
+#gNeck9 {
+  position: absolute;
+  left: 274px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck10 {
+  position: absolute;
+  left: 308px;
+  top: 0px;
+  width: 26px;
+  height: 45px;
+}
+
+#gNeck11 {
+  position: absolute;
+  left: 334px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck12 {
+  position: absolute;
+  left: 368px;
+  top: 0px;
+  width: 20px;
+  height: 45px;
+}
+
+#gNeck13 {
+  position: absolute;
+  left: 388px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck14 {
+  position: absolute;
+  left: 422px;
+  top: 0px;
+  width: 18px;
+  height: 45px;
+}
+
+#gNeck15 {
+  position: absolute;
+  left: 440px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck16 {
+  position: absolute;
+  left: 474px;
+  top: 0px;
+  width: 15px;
+  height: 45px;
+}
+
+#gNeck17 {
+  position: absolute;
+  left: 489px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck18 {
+  position: absolute;
+  left: 523px;
+  top: 0px;
+  width: 13px;
+  height: 45px;
+}
+
+#gNeck19 {
+  position: absolute;
+  left: 536px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck20 {
+  position: absolute;
+  left: 570px;
+  top: 0px;
+  width: 9px;
+  height: 45px;
+}
+
+#gNeck21 {
+  position: absolute;
+  left: 579px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck22 {
+  position: absolute;
+  left: 613px;
+  top: 0px;
+  width: 8px;
+  height: 45px;
+}
+
+#gNeck23 {
+  position: absolute;
+  left: 621px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck24 {
+  position: absolute;
+  left: 655px;
+  top: 0px;
+  width: 7px;
+  height: 45px;
+}
+
+#gNeck25 {
+  position: absolute;
+  left: 662px;
+  top: 0px;
+  width: 34px;
+  height: 9px;
+}
+
+#gNeck26 {
+  position: absolute;
+  left: 696px;
+  top: 0px;
+  width: 4px;
+  height: 130px;
+}
+
+#gn65 {
+  position: absolute;
+  left: 0px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn66 {
+  position: absolute;
+  left: 79px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn67 {
+  position: absolute;
+  left: 147px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn68 {
+  position: absolute;
+  left: 214px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn69 {
+  position: absolute;
+  left: 274px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn70 {
+  position: absolute;
+  left: 334px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn71 {
+  position: absolute;
+  left: 388px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn72 {
+  position: absolute;
+  left: 440px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn73 {
+  position: absolute;
+  left: 489px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn74 {
+  position: absolute;
+  left: 536px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn75 {
+  position: absolute;
+  left: 579px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn76 {
+  position: absolute;
+  left: 621px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn77 {
+  position: absolute;
+  left: 662px;
+  top: 9px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn52 {
+  position: absolute;
+  left: 0px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn53 {
+  position: absolute;
+  left: 79px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn54 {
+  position: absolute;
+  left: 147px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn55 {
+  position: absolute;
+  left: 214px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn56 {
+  position: absolute;
+  left: 274px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn57 {
+  position: absolute;
+  left: 334px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn58 {
+  position: absolute;
+  left: 388px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn59 {
+  position: absolute;
+  left: 440px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn60 {
+  position: absolute;
+  left: 489px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn61 {
+  position: absolute;
+  left: 536px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn62 {
+  position: absolute;
+  left: 579px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn63 {
+  position: absolute;
+  left: 621px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn64 {
+  position: absolute;
+  left: 662px;
+  top: 27px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn39 {
+  position: absolute;
+  left: 0px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck54 {
+  position: absolute;
+  left: 34px;
+  top: 45px;
+  width: 45px;
+  height: 38px;
+}
+
+#gn40 {
+  position: absolute;
+  left: 79px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck56 {
+  position: absolute;
+  left: 113px;
+  top: 45px;
+  width: 34px;
+  height: 38px;
+}
+
+#gn41 {
+  position: absolute;
+  left: 147px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck58 {
+  position: absolute;
+  left: 181px;
+  top: 45px;
+  width: 33px;
+  height: 38px;
+}
+
+#gn42 {
+  position: absolute;
+  left: 214px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck60 {
+  position: absolute;
+  left: 248px;
+  top: 45px;
+  width: 26px;
+  height: 38px;
+}
+
+#gn43 {
+  position: absolute;
+  left: 274px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck62 {
+  position: absolute;
+  left: 308px;
+  top: 45px;
+  width: 26px;
+  height: 38px;
+}
+
+#gn44 {
+  position: absolute;
+  left: 334px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck64 {
+  position: absolute;
+  left: 368px;
+  top: 45px;
+  width: 20px;
+  height: 38px;
+}
+
+#gn45 {
+  position: absolute;
+  left: 388px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck66 {
+  position: absolute;
+  left: 422px;
+  top: 45px;
+  width: 18px;
+  height: 38px;
+}
+
+#gn46 {
+  position: absolute;
+  left: 440px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck68 {
+  position: absolute;
+  left: 474px;
+  top: 45px;
+  width: 15px;
+  height: 38px;
+}
+
+#gn47 {
+  position: absolute;
+  left: 489px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck70 {
+  position: absolute;
+  left: 523px;
+  top: 45px;
+  width: 13px;
+  height: 38px;
+}
+
+#gn48 {
+  position: absolute;
+  left: 536px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck72 {
+  position: absolute;
+  left: 570px;
+  top: 45px;
+  width: 9px;
+  height: 38px;
+}
+
+#gn49 {
+  position: absolute;
+  left: 579px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck74 {
+  position: absolute;
+  left: 613px;
+  top: 45px;
+  width: 8px;
+  height: 38px;
+}
+
+#gn50 {
+  position: absolute;
+  left: 621px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gNeck76 {
+  position: absolute;
+  left: 655px;
+  top: 45px;
+  width: 7px;
+  height: 38px;
+}
+
+#gn51 {
+  position: absolute;
+  left: 662px;
+  top: 45px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn26 {
+  position: absolute;
+  left: 0px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn27 {
+  position: absolute;
+  left: 79px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn28 {
+  position: absolute;
+  left: 147px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn29 {
+  position: absolute;
+  left: 214px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn30 {
+  position: absolute;
+  left: 274px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn31 {
+  position: absolute;
+  left: 334px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn32 {
+  position: absolute;
+  left: 388px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn33 {
+  position: absolute;
+  left: 440px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn34 {
+  position: absolute;
+  left: 489px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn35 {
+  position: absolute;
+  left: 536px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn36 {
+  position: absolute;
+  left: 579px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn37 {
+  position: absolute;
+  left: 621px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn38 {
+  position: absolute;
+  left: 662px;
+  top: 64px;
+  width: 34px;
+  height: 19px;
+}
+
+#gn13 {
+  position: absolute;
+  left: 0px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck92 {
+  position: absolute;
+  left: 34px;
+  top: 83px;
+  width: 45px;
+  height: 47px;
+}
+
+#gn14 {
+  position: absolute;
+  left: 79px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck94 {
+  position: absolute;
+  left: 113px;
+  top: 83px;
+  width: 34px;
+  height: 47px;
+}
+
+#gn15 {
+  position: absolute;
+  left: 147px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck96 {
+  position: absolute;
+  left: 181px;
+  top: 83px;
+  width: 33px;
+  height: 47px;
+}
+
+#gn16 {
+  position: absolute;
+  left: 214px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck98 {
+  position: absolute;
+  left: 248px;
+  top: 83px;
+  width: 26px;
+  height: 47px;
+}
+
+#gn17 {
+  position: absolute;
+  left: 274px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck100 {
+  position: absolute;
+  left: 308px;
+  top: 83px;
+  width: 26px;
+  height: 47px;
+}
+
+#gn18 {
+  position: absolute;
+  left: 334px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck102 {
+  position: absolute;
+  left: 368px;
+  top: 83px;
+  width: 20px;
+  height: 47px;
+}
+
+#gn19 {
+  position: absolute;
+  left: 388px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck104 {
+  position: absolute;
+  left: 422px;
+  top: 83px;
+  width: 18px;
+  height: 47px;
+}
+
+#gn20 {
+  position: absolute;
+  left: 440px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck106 {
+  position: absolute;
+  left: 474px;
+  top: 83px;
+  width: 15px;
+  height: 47px;
+}
+
+#gn21 {
+  position: absolute;
+  left: 489px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck108 {
+  position: absolute;
+  left: 523px;
+  top: 83px;
+  width: 13px;
+  height: 47px;
+}
+
+#gn22 {
+  position: absolute;
+  left: 536px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck110 {
+  position: absolute;
+  left: 570px;
+  top: 83px;
+  width: 9px;
+  height: 47px;
+}
+
+#gn23 {
+  position: absolute;
+  left: 579px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck112 {
+  position: absolute;
+  left: 613px;
+  top: 83px;
+  width: 8px;
+  height: 47px;
+}
+
+#gn24 {
+  position: absolute;
+  left: 621px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck114 {
+  position: absolute;
+  left: 655px;
+  top: 83px;
+  width: 7px;
+  height: 47px;
+}
+
+#gn25 {
+  position: absolute;
+  left: 662px;
+  top: 83px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn0 {
+  position: absolute;
+  left: 0px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn1 {
+  position: absolute;
+  left: 79px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn2 {
+  position: absolute;
+  left: 147px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn3 {
+  position: absolute;
+  left: 214px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn4 {
+  position: absolute;
+  left: 274px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn5 {
+  position: absolute;
+  left: 334px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn6 {
+  position: absolute;
+  left: 388px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn7 {
+  position: absolute;
+  left: 440px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn8 {
+  position: absolute;
+  left: 489px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn9 {
+  position: absolute;
+  left: 536px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn10 {
+  position: absolute;
+  left: 579px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn11 {
+  position: absolute;
+  left: 621px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gn12 {
+  position: absolute;
+  left: 662px;
+  top: 101px;
+  width: 34px;
+  height: 18px;
+}
+
+#gNeck129 {
+  position: absolute;
+  left: 0px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck130 {
+  position: absolute;
+  left: 79px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck131 {
+  position: absolute;
+  left: 147px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck132 {
+  position: absolute;
+  left: 214px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck133 {
+  position: absolute;
+  left: 274px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck134 {
+  position: absolute;
+  left: 334px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck135 {
+  position: absolute;
+  left: 388px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck136 {
+  position: absolute;
+  left: 440px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck137 {
+  position: absolute;
+  left: 489px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck138 {
+  position: absolute;
+  left: 536px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck139 {
+  position: absolute;
+  left: 579px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck140 {
+  position: absolute;
+  left: 621px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
+}
+
+#gNeck141 {
+  position: absolute;
+  left: 662px;
+  top: 119px;
+  width: 34px;
+  height: 11px;
 }
