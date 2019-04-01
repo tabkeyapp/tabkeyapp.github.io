@@ -43,10 +43,18 @@ b {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#tuningNeck {
+  margin-top: -50px;
+}
+
+#dropdownNeck {
+  margin-top: 391px;
+}
+
 #neckView {
   left: 200px;
   top: 50px;
-  position: relative;
+  position: absolute;
   text-align: center;
 }
 
@@ -65,9 +73,9 @@ b {
   vertical-align: middle;
   text-align: center;
   float: right;
-  margin-top: -250px;
+  margin-top: 251px;
   display: block;
-  position: relative;
+  position: absolute;
   width: 700px;
 }
 
@@ -119,8 +127,8 @@ b {
 }
 
 #inputNeckDiv {
-  top: 500px;
-  left: -100px;
+  top: 460px;
+  left: 0px;
   position: absolute;
 }
 

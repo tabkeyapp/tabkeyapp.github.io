@@ -272,6 +272,7 @@ function keyChange() {
     document.getElementById("gs4").innerHTML = " D";
     document.getElementById("gs5").innerHTML = " A";
     document.getElementById("note").innerHTML = " E";
+
     tuning = document.getElementById("list").value;
     moveLeft.style.left = "0px";
   } else if (document.getElementById("list").value === "D#") {
@@ -688,5 +689,45 @@ function neckView() {
   }
   for (var i = 0; i < hiddenArr.length; i++) {
     hiddenArr[i].className = "showPiano";
+  }
+}
+
+
+
+
+/*
+
+
+Neck view funtionality starts here!
+
+
+*/
+
+function keyChangeN() {
+  if (document.getElementById("listN").value === "E") {
+    document.getElementById("tuningNeck").innerHTML = "<b>Standard</b>";
+    tuning = document.getElementById("listN").value;
+    moveLeft.style.left = "0px";
+  } else if (document.getElementById("listN").value === "D#") {
+    document.getElementById("tuningNeck").innerHTML = "<b>Half-step down</b>";
+    tuning = document.getElementById("listN").value;
+    moveLeft.style.left = "0px";
+  } else if (document.getElementById("listN").value === "D") {
+    document.getElementById("tuningNeck").innerHTML = "<b>Whole-step down</b>";
+
+    tuning = document.getElementById("listN").value;
+    moveLeft.style.left = "0px";
+  } else if (document.getElementById("listN").value === "dropD") {
+    document.getElementById("tuningNeck").innerHTML = "<b>Drop D</b>";
+    tuning = document.getElementById("listN").value;
+    moveLeft.style.left = "0px";
+  } else if (document.getElementById("listN").value === "C#") {
+    document.getElementById("tuningNeck").innerHTML = "<b>Drop C#</b>";
+    tuning = document.getElementById("listN").value;
+    moveLeft.style.left = "-0px";
+  } else if (document.getElementById("listN").value === "C") {
+    document.getElementById("tuningNeck").innerHTML = "<b>Drop C</b>";
+    tuning = document.getElementById("listN").value;
+    moveLeft.style.left = "0px";
   }
 }
