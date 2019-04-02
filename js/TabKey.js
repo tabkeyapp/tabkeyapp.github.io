@@ -14,7 +14,7 @@ var np1, np2, np3, np4, np5, np6, np7; //  Piano note variables
 var x;
 var tuning;
 var neckNotes = [gn0, gn1, gn2, gn3, gn4, gn5, gn6, gn7, gn8, gn9, gn10, gn11, gn12];
-
+var nShift1, nShift2, nShift3, nShift4, nShift5, nShift6, nShift7;
 /* Major keys in standard tuning
 var cMajStandard = [0,1,3,5,7,8,10];
 var gMajStandard = [0,2,3,5,7,8,10];
@@ -723,18 +723,54 @@ function guitarReceiverNeck() {
     } else if (document.getElementById("userTextBoxNeck").value === "") {
       swal("Enter a note!");
     } else {
+      if (tuning === "E") {
+        document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + n1 + '.png">';
+      } else if (tuning === "D#") {
+        neckShift = n1;
+        neckShift -= 1;
+        document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "D") {
+        neckShift = n1;
+        neckShift -= 2;
+        document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C#") {
+        neckShift = n1;
+        neckShift -= 3;
+        document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C") {
+        neckShift = n1;
+        neckShift -= 4;
+        document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      }
       n1 = parseInt(n1);
       userInput.push(n1);
-      document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + n1 + '.png">';
     }
   } else if (userInput.length === 1) {
     n2 = x;
     if (x < 1 || x > 3 || (n2 - n1) > 2 || (n2 - n1) < 1) {
       swal("Please enter valid second note!");
     } else {
+      if (tuning === "E") {
+        document.getElementById("gn" + n2).innerHTML = '<img src="notes/gn' + n2 + '.png">';
+      } else if (tuning === "D#") {
+        neckShift = n2;
+        neckShift -= 1;
+        document.getElementById("gn" + n2).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "D") {
+        neckShift = n2;
+        neckShift -= 2;
+        document.getElementById("gn" + n2).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C#") {
+        neckShift = n2;
+        neckShift -= 3;
+        document.getElementById("gn" + n2).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C") {
+        neckShift = n2;
+        neckShift -= 4;
+        document.getElementById("gn" + n2).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      }
       n2 = parseInt(n2);
       userInput.push(n2);
-      document.getElementById("gn" + n2).innerHTML = '<img src="notes/gn' + n2 + '.png">';
     }
   } else if (userInput.length === 2) {
     n3 = x;
@@ -743,9 +779,29 @@ function guitarReceiverNeck() {
     } else if ((n3 - n2) === 1 && (n2 - n1) === 1) {
       swal("Please enter valid third note!");
     } else {
+      if (tuning === "E") {
+        n3 = parseInt(n3);
+        userInput.push(n3);
+        document.getElementById("gn" + n3).innerHTML = '<img src="notes/gn' + n3 + '.png">';
+      } else if (tuning === "D#") {
+        neckShift = n3;
+        neckShift -= 1;
+        document.getElementById("gn" + n3).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "D") {
+        neckShift = n3;
+        neckShift -= 2;
+        document.getElementById("gn" + n3).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C#") {
+        neckShift = n3;
+        neckShift -= 3;
+        document.getElementById("gn" + n3).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C") {
+        neckShift = n3;
+        neckShift -= 4;
+        document.getElementById("gn" + n3).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      }
       n3 = parseInt(n3);
       userInput.push(n3);
-      document.getElementById("gn" + n3).innerHTML = '<img src="notes/gn' + n3 + '.png">';
     }
   } else if (userInput.length === 3) {
     n4 = x;
@@ -754,9 +810,27 @@ function guitarReceiverNeck() {
     } else if ((n4 - n3) === 1 && (n3 - n2) === 1) {
       swal("Please enter valid fourth note!");
     } else {
+      if (tuning === "E") {
+        document.getElementById("gn" + n4).innerHTML = '<img src="notes/gn' + n4 + '.png">';
+      } else if (tuning === "D#") {
+        neckShift = n4;
+        neckShift -= 1;
+        document.getElementById("gn" + n4).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "D") {
+        neckShift = n4;
+        neckShift -= 2;
+        document.getElementById("gn" + n4).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C#") {
+        neckShift = n4;
+        neckShift -= 3;
+        document.getElementById("gn" + n4).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C") {
+        neckShift = n4;
+        neckShift -= 4;
+        document.getElementById("gn" + n4).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      }
       n4 = parseInt(n4);
       userInput.push(n4);
-      document.getElementById("gn" + n4).innerHTML = '<img src="notes/gn' + n4 + '.png">';
     }
   } else if (userInput.length === 4) {
     n5 = x;
@@ -767,9 +841,27 @@ function guitarReceiverNeck() {
     } else if ((n5 - n4) === 2 && (n4 - n3) === 2 && (n3 - n2) === 2 && (n2 - n1) === 2) {
       swal("Please enter valid fifth note!");
     } else {
+      if (tuning === "E") {
+        document.getElementById("gn" + n5).innerHTML = '<img src="notes/gn' + n5 + '.png">';
+      } else if (tuning === "D#") {
+        neckShift = n5;
+        neckShift -= 1;
+        document.getElementById("gn" + n5).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "D") {
+        neckShift = n5;
+        neckShift -= 2;
+        document.getElementById("gn" + n5).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C#") {
+        neckShift = n5;
+        neckShift -= 3;
+        document.getElementById("gn" + n5).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C") {
+        neckShift = n5;
+        neckShift -= 4;
+        document.getElementById("gn" + n5).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      }
       n5 = parseInt(n5);
       userInput.push(n5);
-      document.getElementById("gn" + n5).innerHTML = '<img src="notes/gn' + n5 + '.png">';
     }
   } else if (userInput.length === 5) {
     n6 = x;
@@ -780,9 +872,27 @@ function guitarReceiverNeck() {
     } else if ((n6 - n5) === 2 && (n5 - n4) === 2 && (n4 - n3) === 2 && (n3 - n2) === 2) {
       swal("Please enter valid fifth note!");
     } else {
+      if (tuning === "E") {
+        document.getElementById("gn" + n6).innerHTML = '<img src="notes/gn' + n6 + '.png">';
+      } else if (tuning === "D#") {
+        neckShift = n6;
+        neckShift -= 1;
+        document.getElementById("gn" + n6).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "D") {
+        neckShift = n6;
+        neckShift -= 2;
+        document.getElementById("gn" + n6).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C#") {
+        neckShift = n6;
+        neckShift -= 3;
+        document.getElementById("gn" + n6).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C") {
+        neckShift = n6;
+        neckShift -= 4;
+        document.getElementById("gn" + n6).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      }
       n6 = parseInt(n6);
       userInput.push(n6);
-      document.getElementById("gn" + n6).innerHTML = '<img src="notes/gn' + n6 + '.png">';
     }
   } else if (userInput.length === 6) {
     n7 = x;
@@ -793,10 +903,28 @@ function guitarReceiverNeck() {
     } else if ((n7 - n6) === 2 && (n6 - n5) === 2 && (n5 - n4) === 2 && (n4 - n3) === 2) {
       swal("Please enter valid last note!");
     } else {
+      if (tuning === "E") {
+        document.getElementById("gn" + n7).innerHTML = '<img src="notes/gn' + n7 + '.png">';
+      } else if (tuning === "D#") {
+        neckShift = n7;
+        neckShift -= 1;
+        document.getElementById("gn" + n7).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "D") {
+        neckShift = n7;
+        neckShift -= 2;
+        document.getElementById("gn" + n7).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C#") {
+        neckShift = n7;
+        neckShift -= 3;
+        document.getElementById("gn" + n7).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C") {
+        neckShift = n7;
+        neckShift -= 4;
+        document.getElementById("gn" + n7).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      }
       n7 = parseInt(n7);
       userInput.push(n7);
-      document.getElementById("gn" + n7).innerHTML = '<img src="notes/gn' + n7 + '.png">';
-      showKey();
+      for (var i = 12; i < 78; i++)
     }
   } else if (userInput.length > 6) {
     userInput = [];
@@ -806,10 +934,29 @@ function guitarReceiverNeck() {
     if (x < 0 || x > 1) {
       swal("Please enter valid first note!");
     } else {
-      n1 = x;
+      if (tuning === "E") {
+        n1 = parseInt(n1);
+        userInput.push(n1);
+        document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + n1 + '.png">';
+      } else if (tuning === "D#") {
+        neckShift = n1;
+        neckShift -= 1;
+        document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "D") {
+        neckShift = n1;
+        neckShift -= 2;
+        document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C#") {
+        neckShift = n1;
+        neckShift -= 3;
+        document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      } else if (tuning === "C") {
+        neckShift = n1;
+        neckShift -= 4;
+        document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + neckShift + '.png">';
+      }
       n1 = parseInt(n1);
       userInput.push(n1);
-      document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + n1 + '.png">';
     }
   }
 }
@@ -826,7 +973,6 @@ function keyChangeN() {
     moveLeft.style.left = "0px";
   } else if (document.getElementById("listN").value === "D") {
     document.getElementById("tuningNeck").innerHTML = "<b>Whole-step down</b>";
-
     tuning = document.getElementById("listN").value;
     moveLeft.style.left = "0px";
   } else if (document.getElementById("listN").value === "dropD") {
@@ -841,5 +987,62 @@ function keyChangeN() {
     document.getElementById("tuningNeck").innerHTML = "<b>Drop C</b>";
     tuning = document.getElementById("listN").value;
     moveLeft.style.left = "0px";
+  }
+}
+
+function showKeyN() {
+  if (tuning === "E") {
+    findStandardKey();
+    if (theScale === "Enter a scale!") {
+      swal("Please shift scale down.");
+    }
+    document.getElementById("majorBotN").innerHTML = theMajor;
+    document.getElementById("minorBotN").innerHTML = theMinor;
+
+  } else if (tuning === "D#") {
+    halfToStandard();
+    findStandardKey();
+    if (theScale === "Enter a scale!") {
+      swal("Please shift scale down.");
+    }
+    document.getElementById("majorBot").innerHTML = theMajor;
+    document.getElementById("minorBot").innerHTML = theMinor;
+
+  } else if (tuning === "D") {
+    dToStandard();
+    findStandardKey();
+    if (theScale === "Enter a scale!") {
+      swal("Please shift scale down.");
+
+    }
+    document.getElementById("majorBot").innerHTML = theMajor;
+    document.getElementById("minorBot").innerHTML = theMinor;
+  } else if (tuning === "dropD") {
+    dToStandard();
+    findStandardKey();
+    if (theScale === "Enter a scale!") {
+      swal("Please shift scale down.");
+
+    }
+    document.getElementById("majorBot").innerHTML = theMajor;
+    document.getElementById("minorBot").innerHTML = theMinor;
+  } else if (tuning === "C#") {
+    cSharpToStandard();
+    findStandardKey();
+    if (theScale === "Enter a scale!") {
+      swal("Please shift scale down.");
+    }
+    document.getElementById("majorBot").innerHTML = theMajor;
+    document.getElementById("minorBot").innerHTML = theMinor;
+  } else if (tuning === "C") {
+    cToStandard();
+    findStandardKey();
+    if (theScale === "Enter a scale!") {
+      swal("Please shift scale down.");
+    }
+    document.getElementById("majorBot").innerHTML = theMajor;
+    document.getElementById("minorBot").innerHTML = theMinor;
+  } else if (tuning === "") {
+    userInput = [];
   }
 }
