@@ -15,9 +15,7 @@ var x;
 var tuning;
 var neckNotes = [gn0, gn1, gn2, gn3, gn4, gn5, gn6, gn7, gn8, gn9, gn10, gn11, gn12];
 var nShift1, nShift2, nShift3, nShift4, nShift5, nShift6, nShift7;
-var octave = 12;
-var nextNote = 13;
-var dropNote = 15;
+
 /* Major keys in standard tuning
 var cMajStandard = [0,1,3,5,7,8,10];
 var gMajStandard = [0,2,3,5,7,8,10];
@@ -121,6 +119,22 @@ function guitarReceiver() {
       document.getElementById("s7").innerHTML = n7;
       document.getElementById("s8").innerHTML = "";
       showKey();
+      if (typeof theMajor === "undefined") {
+        swal("Uh oh!  This scale isn't in a major key.");
+        userInput = [];
+        document.getElementById("majorBot").innerHTML = "";
+        document.getElementById("minorBot").innerHTML = "";
+        document.getElementById("s1").innerHTML = "-";
+        document.getElementById("s2").innerHTML = "-";
+        document.getElementById("s3").innerHTML = "-";
+        document.getElementById("s4").innerHTML = "-";
+        document.getElementById("s5").innerHTML = "-";
+        document.getElementById("s6").innerHTML = "-";
+        document.getElementById("s7").innerHTML = "-";
+        document.getElementById("s8").innerHTML = "-";
+        document.getElementById("majorBot").innerHTML = "";
+        document.getElementById("minorBot").innerHTML = "";
+      }
     }
   } else if (userInput.length > 6) {
     userInput = [];
@@ -542,6 +556,20 @@ function pianoReceiver() {
         document.getElementById("k12").className = "hiddenPiano";
       }
       showPianoKey();
+      if (typeof theMajor === "undefined") {
+        swal("Uh oh!  This scale isn't in a major key.");
+        userInput = [];
+        document.getElementById("majorBotP").innerHTML = "";
+        document.getElementById("minorBotP").innerHTML = "";
+        var hiddenLen = document.querySelectorAll(".hiddenPiano");
+        var hiddenArr = [];
+        for (var i = 0; i < hiddenLen.length; i++) {
+          hiddenArr.push(hiddenLen[i]);
+        }
+        for (var i = 0; i < hiddenArr.length; i++) {
+          hiddenArr[i].className = "showPiano";
+        }
+      }
     }
   } else if (userInput.length > 6) {
     userInput = [];
@@ -553,7 +581,7 @@ function pianoReceiver() {
     for (var i = 0; i < hiddenArr.length; i++) {
       hiddenArr[i].className = "showPiano";
     }
-    if (x < 0 || x > 1) {
+    if (x < 1 || x > 2) {
       swal("Please enter valid first note!");
     } else {
       np1 = x;
@@ -575,7 +603,8 @@ function tabView() {
   document.getElementById("faqDiv").className = "hidden";
   document.getElementById("pianoViewDiv").className = "hidden";
   document.getElementById("neckView").className = "hidden";
-
+  document.getElementById("neckViewButton").style.opacity = 0.5;
+  document.getElementById("tabViewButton").style.opacity = 1;
   userInput = [];
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
@@ -601,6 +630,8 @@ function howToView() {
   document.getElementById("faqDiv").className = "hidden";
   document.getElementById("pianoViewDiv").className = "hidden";
   document.getElementById("neckView").className = "hidden";
+  document.getElementById("neckViewButton").style.opacity = 0.5;
+  document.getElementById("tabViewButton").style.opacity = 0.5;
   userInput = [];
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
@@ -626,6 +657,8 @@ function faqView() {
   document.getElementById("faqDiv").className = "show";
   document.getElementById("pianoViewDiv").className = "hidden";
   document.getElementById("neckView").className = "hidden";
+  document.getElementById("neckViewButton").style.opacity = 0.5;
+  document.getElementById("tabViewButton").style.opacity = 0.5;
   userInput = [];
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
@@ -651,6 +684,8 @@ function pianoView() {
   document.getElementById("faqDiv").className = "hidden";
   document.getElementById("pianoViewDiv").className = "show";
   document.getElementById("neckView").className = "hidden";
+  document.getElementById("neckViewButton").style.opacity = 0.5;
+  document.getElementById("tabViewButton").style.opacity = 0.5;
   userInput = [];
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
@@ -676,6 +711,8 @@ function neckView() {
   document.getElementById("faqDiv").className = "hidden";
   document.getElementById("pianoViewDiv").className = "hidden";
   document.getElementById("neckView").className = "show";
+  document.getElementById("tabViewButton").style.opacity = 0.5;
+  document.getElementById("neckViewButton").style.opacity = 1;
   userInput = [];
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
