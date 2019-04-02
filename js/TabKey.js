@@ -13,6 +13,7 @@ var n1, n2, n3, n4, n5, n6, n7; //  Guitar note variables
 var np1, np2, np3, np4, np5, np6, np7; //  Piano note variables
 var x;
 var tuning;
+var neckNotes = [gn0, gn1, gn2, gn3, gn4, gn5, gn6, gn7, gn8, gn9, gn10, gn11, gn12];
 
 /* Major keys in standard tuning
 var cMajStandard = [0,1,3,5,7,8,10];
@@ -702,6 +703,117 @@ Neck view funtionality starts here!
 
 
 */
+
+// On [enter] press for piano
+function giveNeck(ele) {
+  if (event.keyCode == 13) {
+    guitarReceiverNeck();
+    document.getElementById("userTextBoxNeck").value = "";
+  }
+}
+
+function guitarReceiverNeck() {
+  x = document.getElementById("userTextBoxNeck").value;
+  if (userInput.length === 0) {
+    n1 = x;
+    if (x < 0 || x > 1) {
+      swal("Please enter valid first note!");
+    } else if (document.getElementById("listN").value === "") {
+      swal("Select a tuning!");
+    } else if (document.getElementById("userTextBoxNeck").value === "") {
+      swal("Enter a note!");
+    } else {
+      n1 = parseInt(n1);
+      userInput.push(n1);
+      document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + n1 + '.png">';
+    }
+  } else if (userInput.length === 1) {
+    n2 = x;
+    if (x < 1 || x > 3 || (n2 - n1) > 2 || (n2 - n1) < 1) {
+      swal("Please enter valid second note!");
+    } else {
+      n2 = parseInt(n2);
+      userInput.push(n2);
+      document.getElementById("gn" + n2).innerHTML = '<img src="notes/gn' + n2 + '.png">';
+    }
+  } else if (userInput.length === 2) {
+    n3 = x;
+    if (n3 > 6 || n3 < 3 || (n3 - n2) > 2 || (n3 - n2 < 1)) {
+      swal("Please enter valid third note!");
+    } else if ((n3 - n2) === 1 && (n2 - n1) === 1) {
+      swal("Please enter valid third note!");
+    } else {
+      n3 = parseInt(n3);
+      userInput.push(n3);
+      document.getElementById("gn" + n3).innerHTML = '<img src="notes/gn' + n3 + '.png">';
+    }
+  } else if (userInput.length === 3) {
+    n4 = x;
+    if (n4 > 7 || n4 < 5 || (n4 - n3) > 2 || (n4 - n3) < 1) {
+      swal("Please enter valid fourth note!");
+    } else if ((n4 - n3) === 1 && (n3 - n2) === 1) {
+      swal("Please enter valid fourth note!");
+    } else {
+      n4 = parseInt(n4);
+      userInput.push(n4);
+      document.getElementById("gn" + n4).innerHTML = '<img src="notes/gn' + n4 + '.png">';
+    }
+  } else if (userInput.length === 4) {
+    n5 = x;
+    if (n5 > 8 || n5 < 6 || (n5 - n4) > 2 || (n5 - n4) < 1) {
+      swal("Please enter valid fifth note!");
+    } else if ((n5 - n4) === 1 && (n4 - n3) === 1) {
+      swal("Please enter valid fifth note!");
+    } else if ((n5 - n4) === 2 && (n4 - n3) === 2 && (n3 - n2) === 2 && (n2 - n1) === 2) {
+      swal("Please enter valid fifth note!");
+    } else {
+      n5 = parseInt(n5);
+      userInput.push(n5);
+      document.getElementById("gn" + n5).innerHTML = '<img src="notes/gn' + n5 + '.png">';
+    }
+  } else if (userInput.length === 5) {
+    n6 = x;
+    if (n6 > 10 || n6 < 8 || (n6 - n5 < 1) || (n6 - n5) > 2) {
+      swal("Please enter valid sixth note!");
+    } else if ((n6 - n5) === 1 && (n5 - n4) === 1) {
+      swal("Please enter valid sixth note!");
+    } else if ((n6 - n5) === 2 && (n5 - n4) === 2 && (n4 - n3) === 2 && (n3 - n2) === 2) {
+      swal("Please enter valid fifth note!");
+    } else {
+      n6 = parseInt(n6);
+      userInput.push(n6);
+      document.getElementById("gn" + n6).innerHTML = '<img src="notes/gn' + n6 + '.png">';
+    }
+  } else if (userInput.length === 6) {
+    n7 = x;
+    if (n7 > 11 || n7 < 10 || (n7 - n6 < 1) || (n7 - n6 > 2)) {
+      swal("Please enter valid last note!");
+    } else if ((n7 - n6) === 1 && (n6 - n5) === 1) {
+      swal("Please enter valid last note!");
+    } else if ((n7 - n6) === 2 && (n6 - n5) === 2 && (n5 - n4) === 2 && (n4 - n3) === 2) {
+      swal("Please enter valid last note!");
+    } else {
+      n7 = parseInt(n7);
+      userInput.push(n7);
+      document.getElementById("gn" + n7).innerHTML = '<img src="notes/gn' + n7 + '.png">';
+      showKey();
+    }
+  } else if (userInput.length > 6) {
+    userInput = [];
+    for (var i = 0; i < neckNotes.length; i++) {
+      document.getElementById("gn" + i).innerHTML = '<img src="neckspacers/gn' + i + '.png">';
+    }
+    if (x < 0 || x > 1) {
+      swal("Please enter valid first note!");
+    } else {
+      n1 = x;
+      n1 = parseInt(n1);
+      userInput.push(n1);
+      document.getElementById("gn" + n1).innerHTML = '<img src="notes/gn' + n1 + '.png">';
+    }
+  }
+}
+
 
 function keyChangeN() {
   if (document.getElementById("listN").value === "E") {

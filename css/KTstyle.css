@@ -48,7 +48,7 @@ b {
 }
 
 #dropdownNeck {
-  margin-top: 391px;
+  margin-top: 256px;
 }
 
 #neckView {
@@ -73,7 +73,7 @@ b {
   vertical-align: middle;
   text-align: center;
   float: right;
-  margin-top: 251px;
+  margin-top: 0px;
   display: block;
   position: absolute;
   width: 700px;
