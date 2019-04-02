@@ -152,7 +152,6 @@ b {
 #nav {
   width: 900px;
   position: relative;
-  min-height: 60px;
 }
 
 #logo {
@@ -163,7 +162,6 @@ b {
 #navLinks {
   width: 200px;
   float: left;
-  min-height: 60px;
   position: relative;
   top: 7px;
 }
