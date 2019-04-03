@@ -606,6 +606,15 @@ function tabView() {
   document.getElementById("neckViewButton").style.opacity = 0.5;
   document.getElementById("tabViewButton").style.opacity = 1;
   userInput = [];
+  document.getElementById("majorBot").innerHTML = "";
+  document.getElementById("minorBot").innerHTML = "";
+  document.getElementById("majorBotN").innerHTML = "";
+  document.getElementById("minorBotN").innerHTML = "";
+  document.getElementById("majorBotP").innerHTML = "";
+  document.getElementById("minorBotP").innerHTML = "";
+  for (var i = 0; i < neckNotes.length; i++) {
+    document.getElementById("gn" + i).innerHTML = '<img src="neckspacers/gn' + i + '.png">';
+  }
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
   document.getElementById("s3").innerHTML = "-";
@@ -633,6 +642,15 @@ function howToView() {
   document.getElementById("neckViewButton").style.opacity = 0.5;
   document.getElementById("tabViewButton").style.opacity = 0.5;
   userInput = [];
+  document.getElementById("majorBot").innerHTML = "";
+  document.getElementById("minorBot").innerHTML = "";
+  document.getElementById("majorBotN").innerHTML = "";
+  document.getElementById("minorBotN").innerHTML = "";
+  document.getElementById("majorBotP").innerHTML = "";
+  document.getElementById("minorBotP").innerHTML = "";
+  for (var i = 0; i < neckNotes.length; i++) {
+    document.getElementById("gn" + i).innerHTML = '<img src="neckspacers/gn' + i + '.png">';
+  }
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
   document.getElementById("s3").innerHTML = "-";
@@ -660,6 +678,15 @@ function faqView() {
   document.getElementById("neckViewButton").style.opacity = 0.5;
   document.getElementById("tabViewButton").style.opacity = 0.5;
   userInput = [];
+  document.getElementById("majorBot").innerHTML = "";
+  document.getElementById("minorBot").innerHTML = "";
+  document.getElementById("majorBotN").innerHTML = "";
+  document.getElementById("minorBotN").innerHTML = "";
+  document.getElementById("majorBotP").innerHTML = "";
+  document.getElementById("minorBotP").innerHTML = "";
+  for (var i = 0; i < neckNotes.length; i++) {
+    document.getElementById("gn" + i).innerHTML = '<img src="neckspacers/gn' + i + '.png">';
+  }
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
   document.getElementById("s3").innerHTML = "-";
@@ -687,6 +714,15 @@ function pianoView() {
   document.getElementById("neckViewButton").style.opacity = 0.5;
   document.getElementById("tabViewButton").style.opacity = 0.5;
   userInput = [];
+  document.getElementById("majorBot").innerHTML = "";
+  document.getElementById("minorBot").innerHTML = "";
+  document.getElementById("majorBotN").innerHTML = "";
+  document.getElementById("minorBotN").innerHTML = "";
+  document.getElementById("majorBotP").innerHTML = "";
+  document.getElementById("minorBotP").innerHTML = "";
+  for (var i = 0; i < neckNotes.length; i++) {
+    document.getElementById("gn" + i).innerHTML = '<img src="neckspacers/gn' + i + '.png">';
+  }
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
   document.getElementById("s3").innerHTML = "-";
@@ -714,6 +750,15 @@ function neckView() {
   document.getElementById("tabViewButton").style.opacity = 0.5;
   document.getElementById("neckViewButton").style.opacity = 1;
   userInput = [];
+  document.getElementById("majorBot").innerHTML = "";
+  document.getElementById("minorBot").innerHTML = "";
+  document.getElementById("majorBotN").innerHTML = "";
+  document.getElementById("minorBotN").innerHTML = "";
+  document.getElementById("majorBotP").innerHTML = "";
+  document.getElementById("minorBotP").innerHTML = "";
+  for (var i = 0; i < neckNotes.length; i++) {
+    document.getElementById("gn" + i).innerHTML = '<img src="neckspacers/gn' + i + '.png">';
+  }
   document.getElementById("s1").innerHTML = "-";
   document.getElementById("s2").innerHTML = "-";
   document.getElementById("s3").innerHTML = "-";
@@ -976,7 +1021,12 @@ function guitarReceiverNeck() {
       n7 = parseInt(n7);
       userInput.push(n7);
       showKeyN();
-
+      if (typeof theMajor === "undefined") {
+        swal("Uh oh!  This scale isn't in a major key.");
+        userInput = [];
+        document.getElementById("majorBotN").innerHTML = "";
+        document.getElementById("minorBotN").innerHTML = "";
+      }
       //  Populate neck with notes
 
 
